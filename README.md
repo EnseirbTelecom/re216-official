@@ -1,9 +1,4 @@
-# re216-official
-
-This is the project assignment description 
-
-
-
+# RE216 - Projet de programmation réseau
 
 
 
