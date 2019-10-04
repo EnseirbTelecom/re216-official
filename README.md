@@ -2,13 +2,15 @@
 
 
 
-[Jalon 1](#jalon1)
+[Jalon 1](#jalon-1)
 
 
 # Jalons 
 
+
+
+
 ## Jalon 1 - Etablissement d'un modèle client/serveur "Echo" sur TCP, avec un serveur multi-clients.
-#jalon1
 
 ### Description
 
@@ -20,6 +22,8 @@ Dans ce jalon, une fois la connexion établie, le client doit envoyer une chaîn
 Le serveur doit être capable gérer plusieurs clients en parallèle. Pour cela, il faut utiliser un unique processus pour réaliser toutes les tâches en utilisant la fonction **poll()**. Les informations des clients (descripteur de fichier de la socket client et adresse/port) doivent être stockés par le serveur dans une liste chaînée.
 
 Le client doit pouvoir gérer en même temps les messages provenant du serveur et le texte tapé au clavier. Pour cela, il faut également utiliser la fonction poll() côté client.
+
+# jalon 1
 
 ### Exigences
 
