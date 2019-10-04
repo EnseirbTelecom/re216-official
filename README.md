@@ -40,7 +40,7 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 
 Votre projet sera testé et évalué par vos pairs (les T2) pendant la dernière heures de la 4ième et derniere séance de ce projet. Chaque projet sera anonymisé et aléatoirement assigné pour évaluation à un autre groupe de projet anonyme lui aussi. La fiche d'évaluation qui sera rempli par chaque groupe est disponible [ici](evaluation_template.xlsx). 
 
-**!!!ATTENTION¡¡¡** Vos camarades n'auront cesse d'essayer de faire crasher votre programme (volontairement ou non) ou encore de tester des cas d'utilisation que vous n'aurez peut être pas prévu ou anticipé. Pensez donc à bien tester les cas limites de votre programme, et à empecher tous crash possible. Ceci est un travail de rigueur pendant le developpement à ne surtout pas négliger. 
+**!!!ATTENTION¡¡¡** Vos camarades n'auront cesse d'essayer de faire crasher votre programme (volontairement ou non) ou encore de tester des cas d'utilisation que vous n'aurez peut être pas prévus ou anticipés. Pensez donc à bien tester les cas limites de votre programme, et à empecher tous crash possible. Ceci est un travail de rigueur pendant le developpement à ne surtout pas négliger. 
 
 [Top](#re216-\--projet-de-programmation-réseau)
 
