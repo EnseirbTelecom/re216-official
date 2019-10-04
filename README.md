@@ -40,10 +40,10 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 
 ### Soumission des jalons
 
-La soumission des jalons se fait sur GitHub en créant une release de votre code qui sera disponible à toute instant pour l'équipe enseignante. Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases)
+La soumission des jalons se fait sur GitHub en créant une release de votre code qui sera disponible à toute instant pour l'équipe enseignante. Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases). Le nom des releases sera `jalonx` avec `x` le numéro du jalon. 
 
 ### Soumission finale
-15 minutes avant la séance d'évaluation, vous devrez faire une ultime release de votre code sur votre répository privé. C'est ce code là qui sera évalué.
+15 minutes avant la séance d'évaluation, vous devrez faire une ultime release nommée `rendu_final` de votre code sur votre répository privé. C'est ce code là qui sera évalué.
 
 [Top](#re216-\--projet-de-programmation-réseau)
 
@@ -76,9 +76,9 @@ Ce projet sera noté en suivant la grille de notation suivante et en prenant en 
 
 Voici la grille de notation 
 
-| Note | Réalisation des requirements du(es) jalon(s) |
+| Note | Réalisation non buggée des requirements du(es) jalon(s) |
 | ------ | ------ |
-| \[0-5\[ | \[0 - Jalons 1\[ |
+| \[0-5\[ | \[0 - Jalon 1\[ |
 | 5 | Jalons 1 |
 | \]5-8\[ | Jalon 1 + ]0 - Jalon 2\[ | 
 | 8 | Jalon 1 + 2 |
@@ -92,7 +92,8 @@ _Surprise_ : _Faites-vous et faites-nous rever! On veut que vous mettiez des pai
 
 
 ### Points bonus
-
+- Tout fonctionne en ipv6 : +1 point
+- 
 
 ### Point malus
 Des points malus peuvent être appliqués dans les cas suivants:
