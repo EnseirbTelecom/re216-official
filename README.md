@@ -35,10 +35,13 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 
 # Evaluation
 
-1. Soumission des jalons
-2. EValuation par les paies
+Votre projet sera testé et évalué par vos pairs (les T2) pendant la dernière heures de la 4ième et derniere séance de ce projet. Chaque projet sera anonymisé et aléatoirement assigné pour évaluation à un autre groupe de projet anonyme lui aussi. La fiche d'évaluation qui sera rempli par chaque groupe est (sera) disponible [ici](evaluation_template.xlsx) la veille de la dernière séance. 
 
-Votre projet sera testé et évalué par vos pairs (les T2) pendant la dernière heures de la 4ième et derniere séance de ce projet. Chaque projet sera anonymisé et aléatoirement assigné pour évaluation à un autre groupe de projet anonyme lui aussi. La fiche d'évaluation qui sera rempli par chaque groupe est disponible [ici](evaluation_template.xlsx). 
+A l'issue de ces évaluations, l'équipe enseignante récupérera votre code depuis votre répo github qui sera testé par nos programmes d'évaluation sur :
+
+1. le bon respect de l'implémentation des fonctionnalités spécifiées;
+2. le fonctionnement non erroné en cas de reception et traitement de messages non implémentés et de messages erronés (que ce soit du coté client ou du coté serveur);
+3. la libération de mémoire et la fermeture des sockets.
 
 **!!!ATTENTION¡¡¡** Vos camarades n'auront cesse d'essayer de faire crasher votre programme (volontairement ou non) ou encore de tester des cas d'utilisation que vous n'aurez peut être pas prévus ou anticipés. Pensez donc à bien tester les cas limites de votre programme, et à empecher tous crash possible. Ceci est un travail de rigueur pendant le developpement à ne surtout pas négliger. 
 
@@ -47,7 +50,7 @@ Votre projet sera testé et évalué par vos pairs (les T2) pendant la dernière
 
 # Notation
 
-
+1. Soumission des jalons
 
 [Top](#re216-\--projet-de-programmation-réseau)
 
