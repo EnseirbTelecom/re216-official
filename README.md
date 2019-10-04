@@ -48,6 +48,8 @@ La soumission des jalons se fait sur GitHub en créant une release de votre code
 # Evaluation 
 [Top](#re216-\--projet-de-programmation-réseau)
 
+L'évaluation de votre travail se fera en suivant deux méthodes : une évaluation par les pairs, et une évaluation automatique via des programmes de tests.
+
 ### Evaluation par les pairs
 Votre projet sera testé et évalué par vos pairs (les T2) pendant la dernière heure de la 4ième et derniere séance de projet en suivant la politique d'évaluation en double aveugle (double blind policy) : les identités des auteurs du code ainsi que des évaluateurs ne sont pas révélées. Chaque projet sera anonymisé et aléatoirement assigné pour évaluation à un autre groupe de projet anonyme lui aussi. 
 
