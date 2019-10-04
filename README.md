@@ -80,11 +80,11 @@ Voici la grille de notation
 | ------ | ------ |
 | \[0-5\[ | \[0 - Jalons 1\[ |
 | 5 | Jalons 1 |
-| \]5-8\[ | Jalon 1 + ]0 - Jalon 2[ | 
+| \]5-8\[ | Jalon 1 + ]0 - Jalon 2\[ | 
 | 8 | Jalon 1 + Jalon 2 |
-| 8-14  | Jalon 1 + Jalon 2 + ]0 - Jalon 3[ |
+| \]8-14\[  | Jalon 1 + Jalon 2 + \]0 - Jalon 3\[ |
 | 14  | Jalon 1 + Jalon 2 + Jalon 3 |
-| 14-18 | Jalon 1 + Jalon 2 + Jalon 3 + ]0 - Jalon 4[ |
+| \]14-18\[ | Jalon 1 + Jalon 2 + Jalon 3 + \]0 - Jalon 4\[ |
 | 18 | Jalon 1 + Jalon 2 + Jalon 3 + Jalon 4 |
 
 
