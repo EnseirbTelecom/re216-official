@@ -104,7 +104,6 @@ Des points malus peuvent être appliqués dans les cas suivants:
 
 
 # Jalons 
-[Top](#re216-\--projet-de-programmation-réseau)
 
 ## Jalon 1 - Client-serveur TCP et serveur multi-clients 
 [Top](#re216-\--projet-de-programmation-réseau)
