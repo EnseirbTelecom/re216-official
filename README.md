@@ -98,6 +98,149 @@ Utile pour être sûr que vous ne laissez pas trainer vos sockets
 ```lsof -c path/to/program/serveur 2>/dev/null|grep TCP|wc -l```
 
 
+## Rappel de C
+
+### structures
+Syntaxe pour déclarer les structures :
+
+```
+
+struct module{
+    int moduleId;
+    double moduleGrade;
+    char padding[20];
+    
+};
+```
+
+Syntaxe pour déclarer une variable de type structure :
+
+```
+struct module re216;
+```
+
+
+Syntaxe pour accéder aux champs d'une structure
+
+```
+
+struct module re216;
+re216.moduleId=5
+re216.moduleGrade=12.5;
+
+```
+
+Les structure peuvent être manipuler avec des pointeurs aussi
+
+```
+
+struct module re216;
+struct module *pre216=&re216;
+pre216->moduleId=5;
+pre216->moduleGrade=12.5;
+```
+
+On peut créer des alias pour simplifier le nomage des structures
+
+```
+typedef struct module s_module ;
+
+s_module re216;
+re216.moduleId=1;
+re216.moduleGrade=12.5;
+```
+
+
+### Pointeurs
+Les types de base : int, double, float, char
+
+Les pointeurs correspondants : int*, double*, float*, char*
+
+Obtenir le pointeur d'une variable déjà déclarée, utiliser &
+
+```
+
+int a; // variable
+int *pa=&a; // a variable on its pointer
+
+```
+
+à l'inverse, pour obtenir la valeur pointée utiliser *
+
+```
+
+int a = 5;
+int *pa = &a; 
+if ( (* pa ) == 5){ //cool }
+
+```
+
+Les pointeurs fonctionnent aussi avec les structures, mais avec l'opérateur ->
+
+```
+
+struct module re216; 
+re216.moduleId=5; 
+struct module * p_re216 = &re216;
+re216->moduleId=5; //utilise -> et pas le .
+```
+
+passer un pointeur en paramètre d'une fonction
+
+```
+
+int func(int* a, int* b){
+	return *a+*b;
+}
+...
+int a=5;
+int b=7;
+int res;
+res= func(&a,&b);
+if( res == 7) { //cool }
+
+```
+
+
+### Conversion de type
+On peut convertir les types en C avec l'opérateur (.)
+
+Ça marche pour les types de base: 
+
+
+```
+
+int sum =17, count =5;double mean;
+mean =(double) sum / count;
+
+```
+
+Mais c'est surtout utile pour les pointeurs.
+
+```
+
+int main(int argc, char** argv) {
+
+//create a pointer to a structure allocated on the heap with malloc
+struct module *mod=malloc(sizeof(struct module));
+
+//clean the data
+memset(mod,0,sizeof(mod));
+
+//fill it up with some data
+strcpy(mod->base,"florent"); 
+strcpy(mod->base+10,"grelard");
+
+//mod->base is florent___grelar____
+printf("who am I : %s %s \n",mod->base,mod->base+10); //this works
+//but we could also cast the structure to the student structure, and access directly fname and lname
+struct student *stu=(struct student*)mod;
+//stu->fname is florent  stu->lastname is grelard
+printf("who am I 2 :%s %s\n",stu->fname,stu->lname);
+free(mod);
+}
+```
+
 # Evaluation
 
 # Notation
