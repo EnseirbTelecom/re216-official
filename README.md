@@ -1,6 +1,5 @@
 # RE216 - Projet de programmation réseau
 
-
 1. Contexte
 2. Evaluation
 3. Notation
@@ -9,7 +8,7 @@
 * [Jalon 2 - Gestion des utilisateurs](#jalon-2-\--gestion-des-utilisateurs)
 * [Jalon 3 - Gestion des salons de discussion](#jalon-3-\--Gestion-des-salons-de-discussion)
 * [Jalon 4 - Gestion des transferts de fichiers](#jalon-4-\--gestion-des-transferts-de-fichiers)
-4. [Outils](#outils)
+5. [Outils](#outils)
 
 # Contexte
 
@@ -20,6 +19,7 @@ Le projet a pour objectif la réalisation d'une application de chat client/serve
 
 L'objectif sous-jacent de ce projet est la manipulation des primitives réseaux et des sockets POSIX en C que vous avez vues en cours (socket(), bind(), listen(), connect(), accept(), send(), receive() ), ainsi que la mise œuvre de communications sur TCP/IP.
 
+[Top](#-re216-\--projet-de-programmation-réseau)
 
 # Déroulement
 
