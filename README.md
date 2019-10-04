@@ -382,6 +382,7 @@ Utile pour être sûr que vous ne laissez pas trainer vos sockets
 
 ```lsof -c path/to/program/serveur 2>/dev/null|grep TCP|wc -l```
 
+[Top](#re216-\--projet-de-programmation-réseau)
 
 # Rappel de C
 
