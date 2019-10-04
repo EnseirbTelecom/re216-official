@@ -2,13 +2,13 @@
 
 
 
-[Jalon 1](#Jalon1)
+[Jalon 1](#jalon1)
 
 
 # Jalons 
 
 ## Jalon 1 - Etablissement d'un modèle client/serveur "Echo" sur TCP, avec un serveur multi-clients.
-(#Jalon1)
+(#jalon1)
 
 ### Description
 
