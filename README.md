@@ -76,13 +76,16 @@ Ce projet sera noté en suivant la grille de notation suivante et en prenant en 
 
 Voici la grille de notation 
 
-| Jalon | Note |
+| Note | Jalon |
 | ------ | ------ |
-| [0-5[ | [0 - [Jalons 1](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients)] |
-| {1} | [Jalon 2](#jalon-2-\--gestion-des-utilisateurs) |
-| {1} | [Jalon 2](#jalon-2-\--gestion-des-utilisateurs) |
-| 3 Drive | [Jalon 3](#jalon-3-\--Gestion-des-salons-de-discussion) |
-| 4 | [Jalon 4](#jalon-4-\--gestion-des-transferts-de-fichiers) |
+| [0-5[ | [0 - Jalons 1[ |
+| 5 | [Jalons 1] |
+| ]5-8[ | Jalon 1 + ]0 - Jalon 2[ | 
+| 8 | Jalon 1 + Jalon 2 |
+| 8-14  | Jalon 1 + Jalon 2 + ]0 - Jalon 3[ |
+| 14  | Jalon 1 + Jalon 2 + Jalon 3 |
+| 14-18 | Jalon 1 + Jalon 2 + Jalon 3 + ]0 - Jalon 4[ |
+| 18 | Jalon 1 + Jalon 2 + Jalon 3 + Jalon 4 |
 
 
 
