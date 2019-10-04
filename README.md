@@ -166,7 +166,7 @@ Pour faire cela, les utilisateurs devront taper des commandes avant leur message
 
 ```C
 #define NICK_LEN 128
-#define INFOS_LEN 1024
+#define INFOS_LEN 128
 
 enum msg_type { 
 	NICKNAME_NEW,
