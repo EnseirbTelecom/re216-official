@@ -33,7 +33,7 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 
 # Outil
 
-1. Debugger les segfault sans printf
+## Debugger les segfault sans printf
 Si votre programme crash à cause d'un problème mémoire ou tout autre problème, vous pouvez identifier la ligne exacte en utilisant gdb.
 
 ```
@@ -82,6 +82,20 @@ $1 = (int *) 0x0
 
 Pour quitter gdb, faites quit
 
+## Se connecter à votre serveur sans passer par le client
+Votre serveur est un serveur de socket TCP. Telnet est un client TCP, vous pouvez donc l'utiliser pour vous connecter et envoyer directement des inputs au serveur. Imaginons que votre serveur écoute sur le port 8080, la commande suivante vous permet de vous connecter au serveur et taper directement des commandes. Vous recevrez également ses réponses. Pour quitter telnet, faites CTRL + ALT + ] et taper quit
+
+```telnet localhost 8080```
+
+## Se faire passer pour un serveur pour votre client
+la commande nc permet d'émuler un serveur écoutant sur un port donné. Par exemple, pour écouter sur le port 8080, tapez la commande suivante. Vous pourrez envoyer et recevoir des commandes de la part de votre client.
+
+```nc -l 8080```
+
+## Savoir combien de socket sont ouvertes pour le serveur
+Utile pour être sûr que vous ne laissez pas trainer vos sockets
+
+```lsof -c path/to/program/serveur 2>/dev/null|grep TCP|wc -l```
 
 
 # Evaluation
