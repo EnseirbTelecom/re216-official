@@ -25,7 +25,7 @@ L'objectif sous-jacent de ce projet est la manipulation des primitives réseaux 
 
 Le travail doit être fait en groupe de 2 étudiants.
 
-[Support de cours](#RE216_cours.pdf)
+[Support de cours](RE216_cours.pdf)
 
 # Outil
 
