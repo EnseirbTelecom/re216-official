@@ -85,11 +85,11 @@ Les exigences/requirements pour ce premier jalon sont définis comme suit :
 
 **Req1.4** : Le client doit pouvoir prendre une chaîne de caractère tapée au clavier, l'envoyer au serveur et recevoir de ce dernier la même chaîne de caractère.
 
-**Req1.5** : Le client doit pouvoir gérer les chaînes de caractère tapée au clavier et les messages provenant du serveur en même temps.
+**Req1.5** : Le client doit pouvoir gérer les chaînes de caractère tapées au clavier et les messages provenant du serveur en même temps.
 
 **Req1.6** : Le serveur, en recevant une chaîne de caractère depuis un client, doit répéter cette chaîne uniquement à ce même client.
 
-**Req1.7** : La connexion doit se couper lorsque le client envoi '/quit'. Les sockets créés doivent être fermées et la mémoire allouée aux structures de données doit être libérée.
+**Req1.7** : La connexion doit se couper lorsque le client envoi '/quit'. Que ce soit du coté serveur ou du coté client, les sockets créés doivent être fermées et la mémoire allouée aux structures de données doit être libérée.
 
 **Req1.8** : Le serveur doit stocker les informations des clients (descripteur de fichiers et adresse/port remplis par la fonction **accept()**) dans une liste chaînée.
 
@@ -102,7 +102,7 @@ Les exigences/requirements pour ce premier jalon sont définis comme suit :
 
 L'objectif de ce jalon est de permettre au serveur de récupérer, stocker et utiliser des informations relatives aux utilisateurs du service de messagerie instantanée. Le serveur n'est plus, comme dans le jalon 1, qu'un serveur répétitif mais plutôt l'intermédiaire entre les utilisateurs pour l'envoi de messages. 
 Grâce à cela, les utilisateurs seront capable de choisir un pseudo, de voir les pseudos des autres utilisateurs connectés, de récupérer des informations sur ces utilisateurs, d’envoyer des messages privés à un utilisateur et d’envoyer des messages de broadcast à tous les utilisateurs.
-Pour faire cela, les utilisateurs devront taper des commandes avant leur message (/nick, /who, /whois, /msgall, /msg <pseudo>) qui seront interprétées par le client et le serveur.
+Pour faire cela, les utilisateurs devront taper des commandes avant leur message (/nick, /who, /whois <pseudo>, /msgall <msg>, /msg <pseudo> <msg>) qui seront interprétées par le client et le serveur.
 
 À partir de ce jalon, il vous est demandé de ne plus envoyer de simple chaînes de caractères mais d’utiliser la structure suivante pour vos message : 
 
@@ -198,14 +198,21 @@ Connecting to server ... done!
 
 **Req2.8** : Un message envoyé ne doit pas être retransmis à l'expéditeur.
 
-**Req2.9** : Un utilisateur doit pouvoir envoyer un message privé à un autre utilisateur (unicast, commande /msg <pseudo>, type UNICAST_SEND).
+**Req2.9** : Un utilisateur doit pouvoir envoyer un message privé à un autre utilisateur (unicast, commande /msg <pseudo> <msg>, type UNICAST_SEND).
 
 ```
 %terminal_user0> /msg user1 Hello
                     %terminal_user1 > [user0] : Hello
 ```
+
+**Req2.10** : Le serveur doit traiter les requetes de type UNICAST_SEND lorsque l'utilisateur spécifié n'existe pas. Le serveur doit alors renvoyer à l'émetteur une information pertinente.
+```
+%terminal_user0> /msg userKJHDQ Hello
+                    %terminal_user1 > [Server] : user userKJHDQ does not exist
+```
+
 	
-**Req2.10** : Le serveur doit conserer sa fonction “echo” (i.e. renvoyer le message à l’utilisateur) si aucune commande n’est tapée avant le message (echo, type ECHO_SEND).
+**Req2.11** : Le serveur doit considerer sa fonction “echo” (i.e. renvoyer le message à l’utilisateur) si aucune commande n’est tapée avant le message (echo, type ECHO_SEND).
 
 [Top](#re216-\--projet-de-programmation-réseau)
 
@@ -213,8 +220,8 @@ Connecting to server ... done!
 
 ### Description
 
-Ce jalon a pour objectif la réalisation des messages entre les utilisateurs afin que votre application devienne une application de messagerie instantanée à part entière. Jusqu'à présent, le serveur ne permettait que d’envoyer des messages privés en unicast et des messages en broadcast. On introduit ici l'utilisation de la notion de multicast.
-Pour le multicast, un utilisateur peut créer un salon. Les utilisateurs ont alors la possibilité de rejoindre ce salon, et une fois inscrits les utilisateurs du salon peuvent s'échanger des messages entre eux. Les utilisateurs peuvent quitter le salon ou changer de salon quand ils le souhaitent.
+Ce jalon a pour objectif la réalisation des messages entre les utilisateurs afin que votre application devienne une application de messagerie instantanée à part entière. Jusqu'à présent, le serveur ne permettait que d’envoyer des messages privés en unicast et des messages en broadcast. On introduit ici l'utilisation de la notion de multicast applicatif.
+Pour le multicast applicatif, un utilisateur peut créer un salon. Les utilisateurs ont alors la possibilité de rejoindre ce salon, et une fois inscrits les utilisateurs du salon peuvent s'échanger des messages entre eux. Les utilisateurs peuvent quitter le salon ou changer de salon quand ils le souhaitent.
 
 Dans ce jalon, il faut utiliser les types : MULTICAST_CREATE, MULTICAST_LIST, MULTICAST_JOIN, MULTICAST_SEND et MULTICAST_QUIT.
 
