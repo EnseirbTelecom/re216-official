@@ -47,7 +47,7 @@ La soumission des jalons se fait sur GitHub en créant une release de votre code
 
 Votre dernière release doit **obligatoirement** comporté un fichier rendu.txt à la racine de votre réposority qui contient les chaines de caractère :
 - `jalonx` avec `x` dans {0,1,2,3,4,Surprise} indiquant le dernier jalon atteint dans son intégralité
-- `ongoingy`avec `y` {0,1,2,3,4,Surprise} indiquant le jalon en cours s'il y en a un. Si `y` vaut `Surprise`, vous penserez à indiqué ce que vous avez fait en plus du jalon 4 pour permettre aux évaluateurs de savoir quoi tester et de comprendre ce qui a été fait.
+- `ongoingy`avec `y` dans {0,1,2,3,4,Surprise} indiquant le jalon en cours s'il y en a un. Si `y` vaut `Surprise`, vous penserez à indiquer ce que vous avez fait en plus du jalon 4 pour permettre aux évaluateurs de savoir quoi tester et de comprendre ce qui a été fait.
 
 
 
@@ -97,8 +97,8 @@ _Surprise_ : _Faites-vous et faites-nous rever! On veut que vous mettiez des pai
 
 
 ### Points bonus
-- Tout fonctionne en ipv6 : +0.5 point
-- 
+- Tout fonctionne en IPv6 et IPV4 : +0.25 point
+
 
 ### Point malus
 Des points malus peuvent être appliqués dans les cas suivants:
