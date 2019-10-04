@@ -19,7 +19,7 @@ Le projet a pour objectif la réalisation d'une application de chat client/serve
 
 L'objectif sous-jacent de ce projet est la manipulation des primitives réseaux et des sockets POSIX en C que vous avez vues en cours (socket(), bind(), listen(), connect(), accept(), send(), receive() ), ainsi que la mise œuvre de communications sur TCP/IP.
 
-[Top](#-re216-\--projet-de-programmation-réseau)
+[Top](#re216-\--projet-de-programmation-réseau)
 
 # Déroulement
 
