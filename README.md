@@ -78,12 +78,11 @@ Voici la grille de notation
 
 | Jalon | Note |
 | ------ | ------ |
-| [0-1[ | [Jalons 1](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients) |
-| 2 | [Jalon 2](#jalon-2-\--gestion-des-utilisateurs) |
-| 3 Drive | [Jalon 3][PlGd] |
-| 4 | [Jalon 4][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+| [0-5[ | [0 - [Jalons 1](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients)] |
+| {1} | [Jalon 2](#jalon-2-\--gestion-des-utilisateurs) |
+| {1} | [Jalon 2](#jalon-2-\--gestion-des-utilisateurs) |
+| 3 Drive | [Jalon 3](#jalon-3-\--Gestion-des-salons-de-discussion) |
+| 4 | [Jalon 4](#jalon-4-\--gestion-des-transferts-de-fichiers) |
 
 
 
