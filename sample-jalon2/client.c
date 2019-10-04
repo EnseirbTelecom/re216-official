@@ -32,7 +32,7 @@ void echo_client(int sockfd) {
 			break;
 		}
 		// Sending message (ECHO)
-		if (send(sockfd, buff, strlen(buff), 0) <= 0) {
+		if (send(sockfd, buff, msgstruct.pld_len, 0) <= 0) {
 			break;
 		}
 		printf("Message sent!\n");
@@ -44,7 +44,7 @@ void echo_client(int sockfd) {
 			break;
 		}
 		// Receiving message
-		if (recv(sockfd, buff, MSG_LEN, 0) <= 0) {
+		if (recv(sockfd, buff, msgstruct.pld_len, 0) <= 0) {
 			break;
 		}
 		printf("pld_len: %i / nick_sender: %s / type: %s / infos: %s\n", msgstruct.pld_len, msgstruct.nick_sender, msg_type_str[msgstruct.type], msgstruct.infos);
