@@ -37,7 +37,7 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 Si votre programme crash à cause d'un problème mémoire ou tout autre problème, vous pouvez identifier la ligne exacte en utilisant gdb.
 
 ```
-    gdb --args ./jalon01/RE216_JALON01_CLIENT localhost 8080
+    gdb --args path/to/program/prog localhost 8080
 ```
 
 
@@ -50,10 +50,10 @@ Tapez "run" pour lancer l'application.
 ```
 
     (gdb) run
-    Starting program: /home/nherbaut/workspace-ipb/re216/build/jalon01/RE216_JALON01_CLIENT qsdf qsdf
+    Starting program: path/to/program/prog arg1 arg2
 
     Program received signal SIGSEGV, Segmentation fault.
-    0x000000000040085b in main (argc=3, argv=0x7fffffffdda8) at /home/nherbaut/workspace-ipb/re216/src/jalon01/client.c:24
+    0x000000000040085b in main (argc=3, argv=0x7fffffffdda8) at path/to/program/prog.c:24
     24  printf("%d",*d);
     (gdb) 
     
@@ -64,8 +64,8 @@ de là, vous pouvez voir la ligne qui pose problème et même voir la pile d'app
 ```
 
 (gdb) backtrace
-#0  0x0000000000400849 in do_ () at /home/nherbaut/workspace-ipb/re216/src/jalon01/client.c:14
-#1  0x00000000004008a2 in main (argc=3, argv=0x7fffffffdda8) at /home/nherbaut/workspace-ipb/re216/src/jalon01/client.c:28
+#0  0x0000000000400849 in do_ () at path/to/program/prog.c:14
+#1  0x00000000004008a2 in main (argc=3, argv=0x7fffffffdda8) at path/to/program/prog.c:28
 (gdb) 
 
 ```
