@@ -1,9 +1,9 @@
 # RE216 - Projet de programmation réseau
 
-1. Contexte
-2. Evaluation
-3. Notation
-4. Jalons
+1. [Contexte](#contexte)
+2. [Evaluation](#evaluation)
+3. [Notation](#notation)
+4. [Jalons](#jalons)
 * [Jalon 1 - Client-serveur TCP et serveur multi-clients](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients)
 * [Jalon 2 - Gestion des utilisateurs](#jalon-2-\--gestion-des-utilisateurs)
 * [Jalon 3 - Gestion des salons de discussion](#jalon-3-\--Gestion-des-salons-de-discussion)
