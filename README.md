@@ -1,8 +1,8 @@
 # RE216 - Projet de programmation réseau
 
 1. [Contexte](#contexte)
-2. [Evaluation](#evaluation)
-3. [Soumission de code](#soumission-de-code)
+2. [Soumission de code](#soumission-de-code)
+3. [Evaluation](#evaluation)
 4. [Notation](#notation)
 5. [Jalons](#jalons)
 * [Jalon 1 - Client-serveur TCP et serveur multi-clients](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients)
@@ -34,8 +34,20 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 
 [Top](#re216-\--projet-de-programmation-réseau)
 
-# Evaluation
 
+
+# Soumission de code
+
+### Soumission des jalons
+
+La soumission des jalons se fait sur GitHub en créant une release de votre code qui sera disponible à toute instant pour l'équipe enseignante. Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases)
+
+### Soumission finale
+15 minutes avant la séance d'évaluation, vous devrez faire une ultime release de votre code sur votre répository privé. C'est ce code là qui sera évalué.
+
+[Top](#re216-\--projet-de-programmation-réseau)
+
+# Evaluation
 
 ### Evaluation par les pairs
 Votre projet sera testé et évalué par vos pairs (les T2) pendant la dernière heure de la 4ième et derniere séance de projet en suivant la politique d'évaluation en double aveugle (double blind policy) : les identités des auteurs du code ainsi que des évaluateurs ne sont pas révélées. Chaque projet sera anonymisé et aléatoirement assigné pour évaluation à un autre groupe de projet anonyme lui aussi. 
@@ -56,21 +68,24 @@ A l'issue de ces évaluations, l'équipe enseignante récupérera votre code dep
 [Top](#re216-\--projet-de-programmation-réseau)
 
 
-# Soumission de code
-
-### Soumission des jalons
-
-La soumission des jalons se fait sur GitHub en créant une release de votre code qui sera disponible à toute instant pour l'équipe enseignante. Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases)
-
-### Soumission finale
-15 minutes avant l'évaluation par les pairs, vous devrez faire une ultime release de votre code sur votre répository privé.
-
-
 # Notation
+
+Ce projet sera noté en suivant la grille de notation suivante et en prenant en compte des points bonus et malus.
 
 ### Grille de notation 
 
-La grille de notation 
+Voici la grille de notation 
+
+| Jalon | Note |
+| ------ | ------ |
+| [0-1[ | [Jalons 1](#jalon 1) |
+| 2 | [plugins/github/README.md][PlGh] |
+| 3 Drive | [plugins/googledrive/README.md][PlGd] |
+| 4 | [plugins/onedrive/README.md][PlOd] |
+| Medium | [plugins/medium/README.md][PlMe] |
+| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+
+
 
 ### Points bonus
 
