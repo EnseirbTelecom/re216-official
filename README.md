@@ -31,10 +31,19 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 
 [Support de cours](RE216_cours.pdf)
 
+[Top](#re216-\--projet-de-programmation-réseau)
 
 # Evaluation
 
+
+[Top](#re216-\--projet-de-programmation-réseau)
+
+
 # Notation
+
+
+
+[Top](#re216-\--projet-de-programmation-réseau)
 
 # Jalons
 
@@ -77,6 +86,9 @@ Les exigences/requirements pour ce premier jalon sont définis comme suit :
 **Req1.7** : La connexion doit se couper lorsque le client envoi '/quit'. Les sockets créés doivent être fermées et la mémoire allouée aux structures de données doit être libérée.
 
 **Req1.8** : Le serveur doit stocker les informations des clients (descripteur de fichiers et adresse/port remplis par la fonction **accept()**) dans une liste chaînée.
+
+
+[Top](#re216-\--projet-de-programmation-réseau)
 
 ## Jalon 2 - Gestion des utilisateurs
 
@@ -153,6 +165,7 @@ Connecting to server ... done!
 **Req2.4** : Le serveur doit tenir compte du changement de pseudo d’un utilisateur.
 
 **Req2.5** : un client doit pouvoir obtenir du serveur la liste des utilisateurs connectés. (avec la commande /who, type NICKNAME_LIST)
+
 ```
 /who
 [Server] : Online users are
@@ -161,7 +174,9 @@ Connecting to server ... done!
                           - CoolestUserEver
 
 ```
+
 **Req2.6** : un client doit pouvoir obtenir du serveur des informations sur un utilisateur en particulier (avec la commande /whois, type NICKNAME_INFOS)
+
 ```
 /whois  User1
 [Server] : User1 connected since 2014/09/29@19:23 with IP address 192.168.3.165 and port number 52322
@@ -173,18 +188,20 @@ Connecting to server ... done!
 %terminal_user0>  /msgall Hello all
                     %terminal_user1 > [user0] : Hello all
                                     %terminal_user2 > [user0] : Hello all
-
 ```
 
 **Req2.8** : Un message envoyé ne doit pas être retransmis à l'expéditeur.
 
 **Req2.9** : Un utilisateur doit pouvoir envoyer un message privé à un autre utilisateur (unicast, commande /msg <pseudo>, type UNICAST_SEND).
+
 ```
 %terminal_user0> /msg user1 Hello
                     %terminal_user1 > [user0] : Hello
-
 ```
+	
 **Req2.10** : Le serveur doit conserer sa fonction “echo” (i.e. renvoyer le message à l’utilisateur) si aucune commande n’est tapée avant le message (echo, type ECHO_SEND).
+
+[Top](#re216-\--projet-de-programmation-réseau)
 
 ## Jalon 3 - Gestion des salons de discussion
 
@@ -236,6 +253,10 @@ Exemple de fonctionnement des salons :
 %terminal_user0> Channel name has been destroyed
 
 ```
+
+
+[Top](#re216-\--projet-de-programmation-réseau)
+
 
 ## Jalon 4 - Gestion des transferts de fichiers
 
@@ -296,10 +317,9 @@ Exemple de fonctionnement :
                             [Y/N]
                             %terminal_user2> N
 %terminal_user1> user2 cancelled file transfer.
-
 ```
 
-
+[Top](#re216-\--projet-de-programmation-réseau)
 
 # Outils
 
@@ -489,3 +509,6 @@ printf("who am I 2 :%s %s\n",stu->fname,stu->lname);
 free(mod);
 }
 ```
+
+[Top](#re216-\--projet-de-programmation-réseau)
+
