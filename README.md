@@ -475,6 +475,9 @@ Utile pour être sûr que vous ne laissez pas trainer vos sockets
 ```lsof -c path/to/program/serveur 2>/dev/null|grep TCP|wc -l```
 
 
+## Tester les fuites mémoire de votre programme
+
+```Valgrind path/to/program/serveur ```
 
 # Rappel de C
 [Top](#re216-\--projet-de-programmation-réseau)
