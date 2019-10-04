@@ -11,10 +11,29 @@
 * [Jalon 3 - Gestion des salons de discussion](#jalon-3-\--Gestion-des-salons-de-discussion)
 * [Jalon 4 - Gestion des transferts de fichiers](#jalon-4-\--gestion-des-transferts-de-fichiers)
 
+# Contexte
 
+Le projet a pour objectif la réalisation d'une application de chat client/serveur en C permettant:
 
-## J
+d'échanger des messages entre 2 utilisateurs, entre plusieurs utilisateurs, ou à destination de la totalité des utilisateurs connectés sur le réseau;
 
+de s'envoyer des fichiers.
+
+Pour réaliser ce système, vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et chaque jalon doit être atteint avant de passer à l'étape suivante. Une fois le jalon atteint, il faut le soumettre à l'équipe enseignante au travers de la procédure qui vous est donnée. Il est estimé qu'au minimum un jalon doit être atteint par séance de projet.
+
+L'objectif sous-jacent de ce projet est la manipulation des primitives réseaux que vous avez vues en cours (socket(), bind(), listen(), connect(), accept(), send(), receive() ), ainsi que la mise œuvre de communications sur TCP/IP.
+
+Le travail doit être fait en groupe de 2 étudiants.
+
+[Support de cours](#RE216_cours.pdf)
+
+# Outil
+
+# Evaluation
+
+# Notation
+
+# Jalons
 
 ## Jalon 1 - Client-serveur TCP et serveur multi-clients
 
