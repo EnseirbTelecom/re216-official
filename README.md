@@ -2,7 +2,6 @@
 
 
 1. Contexte
-2. Outil 
 2. Evaluation
 3. Notation
 4. Jalons
@@ -10,6 +9,7 @@
 * [Jalon 2 - Gestion des utilisateurs](#jalon-2-\--gestion-des-utilisateurs)
 * [Jalon 3 - Gestion des salons de discussion](#jalon-3-\--Gestion-des-salons-de-discussion)
 * [Jalon 4 - Gestion des transferts de fichiers](#jalon-4-\--gestion-des-transferts-de-fichiers)
+4. [Outils](#outils)
 
 # Contexte
 
@@ -31,194 +31,6 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 
 [Support de cours](RE216_cours.pdf)
 
-# Outil
-
-## Debugger les segfault sans printf
-Si votre programme crash à cause d'un problème mémoire ou tout autre problème, vous pouvez identifier la ligne exacte en utilisant gdb.
-
-```
-    gdb --args path/to/program/prog localhost 8080
-```
-
-
-notez le --args qui vous permet de passer des arguments à votre programme.
-
-Vous entrez alors dans l'interface de GDB.
-
-Tapez "run" pour lancer l'application.
-
-```
-    (gdb) run
-    Starting program: path/to/program/prog arg1 arg2
-
-    Program received signal SIGSEGV, Segmentation fault.
-    0x000000000040085b in main (argc=3, argv=0x7fffffffdda8) at path/to/program/prog.c:24
-    24  printf("%d",*d);
-    (gdb)  
-```
-
-de là, vous pouvez voir la ligne qui pose problème et même voir la pile d'appel en tapant "backtrace"
-
-```
-(gdb) backtrace
-#0  0x0000000000400849 in do_ () at path/to/program/prog.c:14
-#1  0x00000000004008a2 in main (argc=3, argv=0x7fffffffdda8) at path/to/program/prog.c:28
-(gdb) 
-```
-
-Vous pouvez même utiliser gdb pour afficher la valeur des variables.
-
-```
-(gdb) p ma_variable
-$1 = (int *) 0x0
-(gdb) 
-```
-
-Pour quitter gdb, faites quit
-
-## Se connecter à votre serveur sans passer par le client
-Votre serveur est un serveur de socket TCP. Telnet est un client TCP, vous pouvez donc l'utiliser pour vous connecter et envoyer directement des inputs au serveur. Imaginons que votre serveur écoute sur le port 8080, la commande suivante vous permet de vous connecter au serveur et taper directement des commandes. Vous recevrez également ses réponses. Pour quitter telnet, faites CTRL + ALT + ] et taper quit
-
-```telnet localhost 8080```
-
-## Se faire passer pour un serveur pour votre client
-la commande nc permet d'émuler un serveur écoutant sur un port donné. Par exemple, pour écouter sur le port 8080, tapez la commande suivante. Vous pourrez envoyer et recevoir des commandes de la part de votre client.
-
-```nc -l 8080```
-
-## Savoir combien de socket sont ouvertes pour le serveur
-Utile pour être sûr que vous ne laissez pas trainer vos sockets
-
-```lsof -c path/to/program/serveur 2>/dev/null|grep TCP|wc -l```
-
-
-## Rappel de C
-
-### structures
-Syntaxe pour déclarer les structures :
-
-```
-struct module{
-    int moduleId;
-    double moduleGrade;
-    char padding[20];
-};
-```
-
-Syntaxe pour déclarer une variable de type structure :
-
-``` struct module re216;```
-
-
-Syntaxe pour accéder aux champs d'une structure
-
-```
-struct module re216;
-re216.moduleId=5
-re216.moduleGrade=12.5;
-```
-
-Les structure peuvent être manipuler avec des pointeurs aussi
-
-```
-struct module re216;
-struct module *pre216=&re216;
-pre216->moduleId=5;
-pre216->moduleGrade=12.5;
-```
-
-On peut créer des alias pour simplifier le nomage des structures
-
-```
-typedef struct module s_module ;
-
-s_module re216;
-re216.moduleId=1;
-re216.moduleGrade=12.5;
-```
-
-
-### Pointeurs
-Les types de base : int, double, float, char
-
-Les pointeurs correspondants : int*, double*, float*, char*
-
-Obtenir le pointeur d'une variable déjà déclarée, utiliser &
-
-```
-int a; // variable
-int *pa=&a; // a variable on its pointer
-```
-
-à l'inverse, pour obtenir la valeur pointée utiliser *
-
-```
-int a = 5;
-int *pa = &a; 
-if ( (* pa ) == 5){ //cool }
-```
-
-Les pointeurs fonctionnent aussi avec les structures, mais avec l'opérateur ->
-
-```
-struct module re216; 
-re216.moduleId=5; 
-struct module * p_re216 = &re216;
-re216->moduleId=5; //utilise -> et pas le .
-```
-
-passer un pointeur en paramètre d'une fonction
-
-```
-int func(int* a, int* b){
-	return *a+*b;
-}
-...
-int a=5;
-int b=7;
-int res;
-res= func(&a,&b);
-if( res == 7) { //cool }
-```
-
-
-### Conversion de type
-On peut convertir les types en C avec l'opérateur (.)
-
-Ça marche pour les types de base: 
-
-
-```
-int sum =17, count =5;double mean;
-mean =(double) sum / count;
-```
-
-Mais c'est surtout utile pour les pointeurs.
-
-```
-int main(int argc, char** argv) {
-
-//create a pointer to a structure allocated on the heap with malloc
-struct information * info=malloc(sizeof(struct module));
-
-//clean the data
-memset(info,0,sizeof(mod));
-
-//fill it up with some data
-strcpy(info->base,"firstname"); 
-strcpy(info->base+12,"lastname");
-
-//mod->base is firstname___lastname____
-printf("who am I : %s %s \n",info->base,info->base+10); //this works
-
-//but we could also cast the structure to the student structure, and access directly fname and lname
-struct student * stu=(struct student *)info;
-
-//stu->fname is firstname  stu->lastname is lastname
-printf("who am I 2 :%s %s\n",stu->fname,stu->lname);
-free(mod);
-}
-```
 
 # Evaluation
 
@@ -485,4 +297,195 @@ Exemple de fonctionnement :
                             %terminal_user2> N
 %terminal_user1> user2 cancelled file transfer.
 
+```
+
+
+
+# Outils
+
+## Debugger les segfault sans printf
+Si votre programme crash à cause d'un problème mémoire ou tout autre problème, vous pouvez identifier la ligne exacte en utilisant gdb.
+
+```
+    gdb --args path/to/program/prog localhost 8080
+```
+
+
+notez le --args qui vous permet de passer des arguments à votre programme.
+
+Vous entrez alors dans l'interface de GDB.
+
+Tapez "run" pour lancer l'application.
+
+```
+    (gdb) run
+    Starting program: path/to/program/prog arg1 arg2
+
+    Program received signal SIGSEGV, Segmentation fault.
+    0x000000000040085b in main (argc=3, argv=0x7fffffffdda8) at path/to/program/prog.c:24
+    24  printf("%d",*d);
+    (gdb)  
+```
+
+de là, vous pouvez voir la ligne qui pose problème et même voir la pile d'appel en tapant "backtrace"
+
+```
+(gdb) backtrace
+#0  0x0000000000400849 in do_ () at path/to/program/prog.c:14
+#1  0x00000000004008a2 in main (argc=3, argv=0x7fffffffdda8) at path/to/program/prog.c:28
+(gdb) 
+```
+
+Vous pouvez même utiliser gdb pour afficher la valeur des variables.
+
+```
+(gdb) p ma_variable
+$1 = (int *) 0x0
+(gdb) 
+```
+
+Pour quitter gdb, faites quit
+
+## Se connecter à votre serveur sans passer par le client
+Votre serveur est un serveur de socket TCP. Telnet est un client TCP, vous pouvez donc l'utiliser pour vous connecter et envoyer directement des inputs au serveur. Imaginons que votre serveur écoute sur le port 8080, la commande suivante vous permet de vous connecter au serveur et taper directement des commandes. Vous recevrez également ses réponses. Pour quitter telnet, faites CTRL + ALT + ] et taper quit
+
+```telnet localhost 8080```
+
+## Se faire passer pour un serveur pour votre client
+la commande nc permet d'émuler un serveur écoutant sur un port donné. Par exemple, pour écouter sur le port 8080, tapez la commande suivante. Vous pourrez envoyer et recevoir des commandes de la part de votre client.
+
+```nc -l 8080```
+
+## Savoir combien de socket sont ouvertes pour le serveur
+Utile pour être sûr que vous ne laissez pas trainer vos sockets
+
+```lsof -c path/to/program/serveur 2>/dev/null|grep TCP|wc -l```
+
+
+## Rappel de C
+
+### structures
+Syntaxe pour déclarer les structures :
+
+```
+struct module{
+    int moduleId;
+    double moduleGrade;
+    char padding[20];
+};
+```
+
+Syntaxe pour déclarer une variable de type structure :
+
+``` struct module re216;```
+
+
+Syntaxe pour accéder aux champs d'une structure
+
+```
+struct module re216;
+re216.moduleId=5
+re216.moduleGrade=12.5;
+```
+
+Les structure peuvent être manipuler avec des pointeurs aussi
+
+```
+struct module re216;
+struct module *pre216=&re216;
+pre216->moduleId=5;
+pre216->moduleGrade=12.5;
+```
+
+On peut créer des alias pour simplifier le nomage des structures
+
+```
+typedef struct module s_module ;
+
+s_module re216;
+re216.moduleId=1;
+re216.moduleGrade=12.5;
+```
+
+
+### Pointeurs
+Les types de base : int, double, float, char
+
+Les pointeurs correspondants : int*, double*, float*, char*
+
+Obtenir le pointeur d'une variable déjà déclarée, utiliser &
+
+```
+int a; // variable
+int *pa=&a; // a variable on its pointer
+```
+
+à l'inverse, pour obtenir la valeur pointée utiliser *
+
+```
+int a = 5;
+int *pa = &a; 
+if ( (* pa ) == 5){ //cool }
+```
+
+Les pointeurs fonctionnent aussi avec les structures, mais avec l'opérateur ->
+
+```
+struct module re216; 
+re216.moduleId=5; 
+struct module * p_re216 = &re216;
+re216->moduleId=5; //utilise -> et pas le .
+```
+
+passer un pointeur en paramètre d'une fonction
+
+```
+int func(int* a, int* b){
+	return *a+*b;
+}
+...
+int a=5;
+int b=7;
+int res;
+res= func(&a,&b);
+if( res == 7) { //cool }
+```
+
+
+### Conversion de type
+On peut convertir les types en C avec l'opérateur (.)
+
+Ça marche pour les types de base: 
+
+
+```
+int sum =17, count =5;double mean;
+mean =(double) sum / count;
+```
+
+Mais c'est surtout utile pour les pointeurs.
+
+```
+int main(int argc, char** argv) {
+
+//create a pointer to a structure allocated on the heap with malloc
+struct information * info=malloc(sizeof(struct module));
+
+//clean the data
+memset(info,0,sizeof(mod));
+
+//fill it up with some data
+strcpy(info->base,"firstname"); 
+strcpy(info->base+12,"lastname");
+
+//mod->base is firstname___lastname____
+printf("who am I : %s %s \n",info->base,info->base+10); //this works
+
+//but we could also cast the structure to the student structure, and access directly fname and lname
+struct student * stu=(struct student *)info;
+
+//stu->fname is firstname  stu->lastname is lastname
+printf("who am I 2 :%s %s\n",stu->fname,stu->lname);
+free(mod);
+}
 ```
