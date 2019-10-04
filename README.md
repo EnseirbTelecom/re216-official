@@ -97,8 +97,8 @@ _Surprise_ : _Faites-vous et faites-nous rever! On veut que vous mettiez des pai
 
 
 ### Points bonus
-- Tout fonctionne en ipv6 : +0.5 point
-- 
+- Tout fonctionne en IPv6 et IPV4 : +0.25 point
+
 
 ### Point malus
 Des points malus peuvent être appliqués dans les cas suivants:
