@@ -12,7 +12,8 @@
 6. [Tips and Tricks](#tips-and-tricks)
 7. [Rappel de C](#rappel-de-c)
 
-# Contexte [Top](#re216-\--projet-de-programmation-réseau)
+# Contexte 
+[Top](#re216-\--projet-de-programmation-réseau)
 
 Ce projet consiste en la réalisation d'un grand classique de la programmation réseau, un cas pratique de discussion instantanée de type client/serveur. A titre d'exemple et de curiosité, vous pouvez jeter un coup d'œil au protocole IRC (Internet Relay Chat) défini originellement par la RFC1459.
 
@@ -22,7 +23,8 @@ L'objectif sous-jacent de ce projet est la manipulation des primitives réseaux 
 
 
 
-# Déroulement [Top](#re216-\--projet-de-programmation-réseau)
+# Déroulement 
+[Top](#re216-\--projet-de-programmation-réseau)
 
 Pour réaliser ce système, vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et chaque jalon doit être atteint avant de passer à l'étape suivante. Une fois le jalon atteint, il faut le soumettre à l'équipe enseignante au travers de la procédure qui vous est donnée. Il est estimé qu'au minimum un jalon doit être atteint par séance de projet.
 
@@ -33,7 +35,8 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 [Support de cours](RE216_cours.pdf)
 
 
-# Soumission de code [Top](#re216-\--projet-de-programmation-réseau)
+# Soumission de code 
+[Top](#re216-\--projet-de-programmation-réseau)
 
 ### Soumission des jalons
 
@@ -42,7 +45,8 @@ La soumission des jalons se fait sur GitHub en créant une release de votre code
 ### Soumission finale
 15 minutes avant la séance d'évaluation, vous devrez faire une ultime release nommée `rendu_final` de votre code sur votre répository privé. C'est ce code là qui sera évalué.
 
-# Evaluation [Top](#re216-\--projet-de-programmation-réseau)
+# Evaluation 
+[Top](#re216-\--projet-de-programmation-réseau)
 
 ### Evaluation par les pairs
 Votre projet sera testé et évalué par vos pairs (les T2) pendant la dernière heure de la 4ième et derniere séance de projet en suivant la politique d'évaluation en double aveugle (double blind policy) : les identités des auteurs du code ainsi que des évaluateurs ne sont pas révélées. Chaque projet sera anonymisé et aléatoirement assigné pour évaluation à un autre groupe de projet anonyme lui aussi. 
@@ -60,7 +64,8 @@ A l'issue de ces évaluations, l'équipe enseignante récupérera votre code dep
 3. la libération de mémoire et la fermeture des sockets.
 
 
-# Notation [Top](#re216-\--projet-de-programmation-réseau)
+# Notation 
+[Top](#re216-\--projet-de-programmation-réseau)
 
 Ce projet sera noté en suivant la grille de notation suivante et en prenant en compte des points bonus et malus.
 
@@ -96,9 +101,11 @@ Des points malus peuvent être appliqués dans les cas suivants:
 - Remise en cause (par le groupe de dev malicieusement ou non) à tort d'une bonne évaluation : -3 points pour l'équipe de dev.
 
 
-# Jalons [Top](#re216-\--projet-de-programmation-réseau)
+# Jalons 
+[Top](#re216-\--projet-de-programmation-réseau)
 
-## Jalon 1 - Client-serveur TCP et serveur multi-clients [Top](#re216-\--projet-de-programmation-réseau)
+## Jalon 1 - Client-serveur TCP et serveur multi-clients 
+[Top](#re216-\--projet-de-programmation-réseau)
 
 ### Description 
 
@@ -139,9 +146,8 @@ Les exigences/requirements pour ce premier jalon sont définis comme suit :
 **Req1.8** : Le serveur doit stocker les informations des clients (descripteur de fichiers et adresse/port remplis par la fonction **accept()**) dans une liste chaînée.
 
 
+## Jalon 2 - Gestion des utilisateurs 
 [Top](#re216-\--projet-de-programmation-réseau)
-
-## Jalon 2 - Gestion des utilisateurs [Top](#re216-\--projet-de-programmation-réseau)
 
 ### Description
 
@@ -259,9 +265,9 @@ Connecting to server ... done!
 	
 **Req2.11** : Le serveur doit considerer sa fonction “echo” (i.e. renvoyer le message à l’utilisateur) si aucune commande n’est tapée avant le message (echo, type ECHO_SEND).
 
-[Top](#re216-\--projet-de-programmation-réseau)
 
 ## Jalon 3 - Gestion des salons de discussion
+[Top](#re216-\--projet-de-programmation-réseau)
 
 ### Description
 
@@ -313,10 +319,10 @@ Exemple de fonctionnement des salons :
 ```
 
 
-[Top](#re216-\--projet-de-programmation-réseau)
 
 
 ## Jalon 4 - Gestion des transferts de fichiers
+[Top](#re216-\--projet-de-programmation-réseau)
 
 ### Description
 
@@ -377,9 +383,9 @@ Exemple de fonctionnement :
 %terminal_user1> user2 cancelled file transfer.
 ```
 
-[Top](#re216-\--projet-de-programmation-réseau)
 
 # Tips and Tricks
+[Top](#re216-\--projet-de-programmation-réseau)
 
 ## Debugger les segfault sans printf
 Si votre programme crash à cause d'un problème mémoire ou tout autre problème, vous pouvez identifier la ligne exacte en utilisant gdb.
@@ -439,9 +445,10 @@ Utile pour être sûr que vous ne laissez pas trainer vos sockets
 
 ```lsof -c path/to/program/serveur 2>/dev/null|grep TCP|wc -l```
 
-[Top](#re216-\--projet-de-programmation-réseau)
+
 
 # Rappel de C
+[Top](#re216-\--projet-de-programmation-réseau)
 
 ## Structures
 Syntaxe pour déclarer les structures :
