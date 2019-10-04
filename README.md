@@ -8,7 +8,7 @@
 # Jalons 
 
 ## Jalon 1 - Etablissement d'un modèle client/serveur "Echo" sur TCP, avec un serveur multi-clients.
-(#jalon1)
+#jalon1
 
 ### Description
 
