@@ -199,20 +199,22 @@ Mais c'est surtout utile pour les pointeurs.
 int main(int argc, char** argv) {
 
 //create a pointer to a structure allocated on the heap with malloc
-struct module *mod=malloc(sizeof(struct module));
+struct information * info=malloc(sizeof(struct module));
 
 //clean the data
-memset(mod,0,sizeof(mod));
+memset(info,0,sizeof(mod));
 
 //fill it up with some data
-strcpy(mod->base,"florent"); 
-strcpy(mod->base+10,"grelard");
+strcpy(info->base,"firstname"); 
+strcpy(info->base+12,"lastname");
 
-//mod->base is florent___grelar____
-printf("who am I : %s %s \n",mod->base,mod->base+10); //this works
+//mod->base is firstname___lastname____
+printf("who am I : %s %s \n",info->base,info->base+10); //this works
+
 //but we could also cast the structure to the student structure, and access directly fname and lname
-struct student *stu=(struct student*)mod;
-//stu->fname is florent  stu->lastname is grelard
+struct student * stu=(struct student *)info;
+
+//stu->fname is firstname  stu->lastname is lastname
 printf("who am I 2 :%s %s\n",stu->fname,stu->lname);
 free(mod);
 }
