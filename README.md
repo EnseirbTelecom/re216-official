@@ -2,10 +2,11 @@
 
 
 
-[Jalon 1](#jalon-1-\--la)
+[Jalon 1](#jalon-1-\--Client\/serveur-simple-sur-TCP\,-avec-serveur-multi\-clients)
 
 
-## Jalon 1 - la
+## Jalon 1 - Client/serveur simple sur TCP, avec serveur multi-clients
+
 ### Client/serveur simple sur TCP, avec serveur multi-clients
 
 ### Description 
