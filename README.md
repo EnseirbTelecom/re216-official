@@ -92,7 +92,12 @@ Voici la grille de notation
 ### Points bonus
 
 ### Point malus
-
+Des points malus peuvent être appliqués dans les cas suivants:
+- Mémoire non libérée (-2 points)
+- File descriptors des sockets et des fichiers non fermés (-2 points)
+- Evaluation par les pairs biaisées volontairement ou non
+-- Remise en en cause à raison d'une évaluation faites par le groupe évaluant
+-- Remise en en cause à raison d'une évaluation faites par le groupe évaluant)
 
 
 [Top](#re216-\--projet-de-programmation-réseau)
