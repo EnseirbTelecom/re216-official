@@ -35,13 +35,16 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 
 # Evaluation
 
+
+### Evaluation par les pairs
 Votre projet sera testé et évalué par vos pairs (les T2) pendant la dernière heures de la 4ième et derniere séance de ce projet. Chaque projet sera anonymisé et aléatoirement assigné pour évaluation à un autre groupe de projet anonyme lui aussi. La fiche d'évaluation qui sera rempli par chaque groupe est (sera) disponible [ici](evaluation_template.xlsx) la veille de la dernière séance. 
 
 **!!!ATTENTION¡¡¡** Vos camarades n'auront cesse d'essayer de faire crasher votre programme (volontairement ou non) ou encore de tester des cas d'utilisation que vous n'aurez peut être pas prévus ou anticipés. Pensez donc à bien tester les cas limites de votre programme, et à empecher tous crash possible. Ceci est un travail de rigueur pendant le developpement à ne surtout pas négliger. 
 
-
+### Evaluation automatique
 A l'issue de ces évaluations, l'équipe enseignante récupérera votre code depuis votre répo github qui sera testé par nos programmes d'évaluation sur :
 
+0. La bonne soumission des jalons en temps et en heures sur votre répository github;
 1. le bon respect de l'implémentation des fonctionnalités spécifiées;
 2. le fonctionnement non erroné en cas de reception et traitement de messages non implémentés et de messages erronés (que ce soit du coté client ou du coté serveur);
 3. la libération de mémoire et la fermeture des sockets.
@@ -52,9 +55,18 @@ A l'issue de ces évaluations, l'équipe enseignante récupérera votre code dep
 
 # Notation
 
-1. Soumission des jalons
+### Soumission des jalons
+
+La soumission des jalons se fait sur GitHub en créant une release de votre code qui sera disponible à toute instant. Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officiel pour apprendre à le faire](https://help.github.com/en/articles/creating-releases)
+
+
+### Grille de notation 
+
+
 
 [Top](#re216-\--projet-de-programmation-réseau)
+
+
 
 # Jalons
 
