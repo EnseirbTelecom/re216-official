@@ -43,28 +43,43 @@ Si votre programme crash à cause d'un problème mémoire ou tout autre problèm
 
 notez le --args qui vous permet de passer des arguments à votre programme.
 
-vous entrez alors dans l'interface de GDB.
+Vous entrez alors dans l'interface de GDB.
 
-tapez "run" pour lancer l'application.
+Tapez "run" pour lancer l'application.
 
-(gdb) run
-Starting program: /home/nherbaut/workspace-ipb/re216/build/jalon01/RE216_JALON01_CLIENT qsdf qsdf
+```
 
-Program received signal SIGSEGV, Segmentation fault.
-0x000000000040085b in main (argc=3, argv=0x7fffffffdda8) at /home/nherbaut/workspace-ipb/re216/src/jalon01/client.c:24
-24  printf("%d",*d);
-(gdb) 
+    (gdb) run
+    Starting program: /home/nherbaut/workspace-ipb/re216/build/jalon01/RE216_JALON01_CLIENT qsdf qsdf
+
+    Program received signal SIGSEGV, Segmentation fault.
+    0x000000000040085b in main (argc=3, argv=0x7fffffffdda8) at /home/nherbaut/workspace-ipb/re216/src/jalon01/client.c:24
+    24  printf("%d",*d);
+    (gdb) 
+    
+```
+
 de là, vous pouvez voir la ligne qui pose problème et même voir la pile d'appel en tapant "backtrace"
+
+```
 
 (gdb) backtrace
 #0  0x0000000000400849 in do_ () at /home/nherbaut/workspace-ipb/re216/src/jalon01/client.c:14
 #1  0x00000000004008a2 in main (argc=3, argv=0x7fffffffdda8) at /home/nherbaut/workspace-ipb/re216/src/jalon01/client.c:28
 (gdb) 
+
+```
+
 Vous pouvez même utiliser gdb pour afficher la valeur des variables.
+
+```
 
 (gdb) p ma_variable
 $1 = (int *) 0x0
 (gdb) 
+
+```
+
 Pour quitter gdb, faites quit
 
 
