@@ -2,14 +2,15 @@
 
 1. [Contexte](#contexte)
 2. [Evaluation](#evaluation)
-3. [Notation](#notation)
-4. [Jalons](#jalons)
+3. [Soumission de code](#soumission-de-code)
+4. [Notation](#notation)
+5. [Jalons](#jalons)
 * [Jalon 1 - Client-serveur TCP et serveur multi-clients](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients)
 * [Jalon 2 - Gestion des utilisateurs](#jalon-2-\--gestion-des-utilisateurs)
 * [Jalon 3 - Gestion des salons de discussion](#jalon-3-\--Gestion-des-salons-de-discussion)
 * [Jalon 4 - Gestion des transferts de fichiers](#jalon-4-\--gestion-des-transferts-de-fichiers)
-5. [Tips and Tricks](#tips-and-tricks)
-5. [Rappel de C](#rappel-de-c)
+6. [Tips and Tricks](#tips-and-tricks)
+7. [Rappel de C](#rappel-de-c)
 
 # Contexte
 
@@ -37,7 +38,9 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 
 
 ### Evaluation par les pairs
-Votre projet sera testé et évalué par vos pairs (les T2) pendant la dernière heure de la 4ième et derniere séance de ce projet. Chaque projet sera anonymisé et aléatoirement assigné pour évaluation à un autre groupe de projet anonyme lui aussi. La fiche d'évaluation qui sera rempli par chaque groupe est (sera) disponible [ici](evaluation_template.xlsx) la veille de la dernière séance. 
+Votre projet sera testé et évalué par vos pairs (les T2) pendant la dernière heure de la 4ième et derniere séance de projet en suivant la politique d'évaluation en double aveugle (double blind policy) : les identités des auteurs du code ainsi que des évaluateurs ne sont pas révélées. Chaque projet sera anonymisé et aléatoirement assigné pour évaluation à un autre groupe de projet anonyme lui aussi. 
+
+Chaque groupe évaluera le code d'un autre groupe en suivant [la fiche d'évaluation](evaluation_template.xlsx) qui sera à rendre à l'équipe enseignante à la fin de la séance selon les modalités qui seront indiquées.
 
 **!!!ATTENTION¡¡¡** Vos camarades n'auront cesse d'essayer de faire crasher votre programme (volontairement ou non) ou encore de tester des cas d'utilisation que vous n'aurez peut être pas prévus ou anticipés. Pensez donc à bien tester les cas limites de votre programme, et à empecher tous crash possible. Ceci est un travail de rigueur pendant le developpement à ne surtout pas négliger. 
 
@@ -53,14 +56,25 @@ A l'issue de ces évaluations, l'équipe enseignante récupérera votre code dep
 [Top](#re216-\--projet-de-programmation-réseau)
 
 
-# Notation
+# Soumission de code
 
 ### Soumission des jalons
 
-La soumission des jalons se fait sur GitHub en créant une release de votre code qui sera disponible à toute instant. Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officiel pour apprendre à le faire](https://help.github.com/en/articles/creating-releases)
+La soumission des jalons se fait sur GitHub en créant une release de votre code qui sera disponible à toute instant pour l'équipe enseignante. Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases)
 
+### Soumission finale
+15 minutes avant l'évaluation par les pairs, vous devrez faire une ultime release de votre code sur votre répository privé.
+
+
+# Notation
 
 ### Grille de notation 
+
+La grille de notation 
+
+### Points bonus
+
+### Point malus
 
 
 
