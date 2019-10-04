@@ -13,21 +13,58 @@
 
 # Contexte
 
-Le projet a pour objectif la réalisation d'une application de chat client/serveur en C permettant:
 
-d'échanger des messages entre 2 utilisateurs, entre plusieurs utilisateurs, ou à destination de la totalité des utilisateurs connectés sur le réseau;
+Ce projet consiste en la réalisation d'un grand classique de la programmation réseau, un cas pratique de discussion instantanée de type client/serveur. A titre d'exemple et de curiosité, vous pouvez jeter un coup d'œil au protocole IRC (Internet Relay Chat) défini originellement par la RFC1459.
 
-de s'envoyer des fichiers.
+Le projet a pour objectif la réalisation d'une application de chat client/serveur en C permettant d'échanger des messages entre 2 utilisateurs, entre plusieurs utilisateurs, ou à destination de la totalité des utilisateurs connectés sur le réseau, ainsi que de s'envoyer des fichiers.
+
+L'objectif sous-jacent de ce projet est la manipulation des primitives réseaux et des sockets POSIX en C que vous avez vues en cours (socket(), bind(), listen(), connect(), accept(), send(), receive() ), ainsi que la mise œuvre de communications sur TCP/IP.
+
+
+# Déroulement
 
 Pour réaliser ce système, vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et chaque jalon doit être atteint avant de passer à l'étape suivante. Une fois le jalon atteint, il faut le soumettre à l'équipe enseignante au travers de la procédure qui vous est donnée. Il est estimé qu'au minimum un jalon doit être atteint par séance de projet.
 
-L'objectif sous-jacent de ce projet est la manipulation des primitives réseaux que vous avez vues en cours (socket(), bind(), listen(), connect(), accept(), send(), receive() ), ainsi que la mise œuvre de communications sur TCP/IP.
+Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet qui s'étalera sur 3,5 séances encadrées de 2h40 (soit 9h20 au total). Le quantité de travail à fournir hors classe est de l'ordre du simple au double de celle des séances encadréees. 
 
-Le travail doit être fait en groupe de 2 étudiants.
+Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléatoirement par l'équipe enseignante avant le début du projet. 
 
 [Support de cours](RE216_cours.pdf)
 
 # Outil
+
+1. Debugger les segfault sans printf
+Si votre programme crash à cause d'un problème mémoire ou tout autre problème, vous pouvez identifier la ligne exacte en utilisant gdb.
+
+``` gdb --args ./jalon01/RE216_JALON01_CLIENT localhost 8080 ```
+
+notez le --args qui vous permet de passer des arguments à votre programme.
+
+vous entrez alors dans l'interface de GDB.
+
+tapez "run" pour lancer l'application.
+
+(gdb) run
+Starting program: /home/nherbaut/workspace-ipb/re216/build/jalon01/RE216_JALON01_CLIENT qsdf qsdf
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000000000040085b in main (argc=3, argv=0x7fffffffdda8) at /home/nherbaut/workspace-ipb/re216/src/jalon01/client.c:24
+24  printf("%d",*d);
+(gdb) 
+de là, vous pouvez voir la ligne qui pose problème et même voir la pile d'appel en tapant "backtrace"
+
+(gdb) backtrace
+#0  0x0000000000400849 in do_ () at /home/nherbaut/workspace-ipb/re216/src/jalon01/client.c:14
+#1  0x00000000004008a2 in main (argc=3, argv=0x7fffffffdda8) at /home/nherbaut/workspace-ipb/re216/src/jalon01/client.c:28
+(gdb) 
+Vous pouvez même utiliser gdb pour afficher la valeur des variables.
+
+(gdb) p ma_variable
+$1 = (int *) 0x0
+(gdb) 
+Pour quitter gdb, faites quit
+
+
 
 # Evaluation
 
