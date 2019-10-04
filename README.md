@@ -13,7 +13,6 @@
 
 # Contexte
 
-
 Ce projet consiste en la réalisation d'un grand classique de la programmation réseau, un cas pratique de discussion instantanée de type client/serveur. A titre d'exemple et de curiosité, vous pouvez jeter un coup d'œil au protocole IRC (Internet Relay Chat) défini originellement par la RFC1459.
 
 Le projet a pour objectif la réalisation d'une application de chat client/serveur en C permettant d'échanger des messages entre 2 utilisateurs, entre plusieurs utilisateurs, ou à destination de la totalité des utilisateurs connectés sur le réseau, ainsi que de s'envoyer des fichiers.
@@ -36,6 +35,12 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 
 # Evaluation
 
+1. Soumission des jalons
+2. EValuation par les paies
+
+Votre projet sera testé et évalué par vos pairs (les T2) pendant la dernière heures de la 4ième et derniere séance de ce projet. Chaque projet sera anonymisé et aléatoirement assigné pour évaluation à un autre groupe de projet anonyme lui aussi. La fiche d'évaluation qui sera rempli par chaque groupe est disponible [ici](evaluation_template.xlsx). 
+
+**!!!ATTENTION¡¡¡** Vos camarades n'auront cesse d'essayer de faire crasher votre programme (volontairement ou non) ou encore de tester des cas d'utilisation que vous n'aurez peut être pas prévu ou anticipé. Pensez donc à bien tester les cas limites de votre programme, et à empecher tous crash possible. Ceci est un travail de rigueur pendant le developpement à ne surtout pas négliger. 
 
 [Top](#re216-\--projet-de-programmation-réseau)
 
