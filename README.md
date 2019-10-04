@@ -8,7 +8,8 @@
 * [Jalon 2 - Gestion des utilisateurs](#jalon-2-\--gestion-des-utilisateurs)
 * [Jalon 3 - Gestion des salons de discussion](#jalon-3-\--Gestion-des-salons-de-discussion)
 * [Jalon 4 - Gestion des transferts de fichiers](#jalon-4-\--gestion-des-transferts-de-fichiers)
-5. [Outils](#outils)
+5. [Tips and Tricks](#tips-and-tricks)
+5. [Rappel de C](#rappel-de-c)
 
 # Contexte
 
@@ -321,7 +322,7 @@ Exemple de fonctionnement :
 
 [Top](#re216-\--projet-de-programmation-réseau)
 
-# Outils
+# Tips and Tricks
 
 ## Debugger les segfault sans printf
 Si votre programme crash à cause d'un problème mémoire ou tout autre problème, vous pouvez identifier la ligne exacte en utilisant gdb.
@@ -382,9 +383,9 @@ Utile pour être sûr que vous ne laissez pas trainer vos sockets
 ```lsof -c path/to/program/serveur 2>/dev/null|grep TCP|wc -l```
 
 
-## Rappel de C
+# Rappel de C
 
-### structures
+## Structures
 Syntaxe pour déclarer les structures :
 
 ```
@@ -428,7 +429,7 @@ re216.moduleGrade=12.5;
 ```
 
 
-### Pointeurs
+## Pointeurs
 Les types de base : int, double, float, char
 
 Les pointeurs correspondants : int*, double*, float*, char*
@@ -472,7 +473,7 @@ if( res == 7) { //cool }
 ```
 
 
-### Conversion de type
+## Conversion de type
 On peut convertir les types en C avec l'opérateur (.)
 
 Ça marche pour les types de base: 
