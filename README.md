@@ -76,11 +76,11 @@ Ce projet sera noté en suivant la grille de notation suivante et en prenant en 
 
 Voici la grille de notation 
 
-| Note | Jalon |
+| Note | Réalisation des requirements du(es) jalon(s) |
 | ------ | ------ |
-| [0-5[ | [0 - Jalons 1[ |
-| 5 | [Jalons 1] |
-| ]5-8[ | Jalon 1 + ]0 - Jalon 2[ | 
+| \[0-5\[ | \[0 - Jalons 1\[ |
+| 5 | Jalons 1 |
+| \]5-8\[ | Jalon 1 + ]0 - Jalon 2[ | 
 | 8 | Jalon 1 + Jalon 2 |
 | 8-14  | Jalon 1 + Jalon 2 + ]0 - Jalon 3[ |
 | 14  | Jalon 1 + Jalon 2 + Jalon 3 |
