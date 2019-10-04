@@ -2,12 +2,12 @@
 
 
 
-* [Jalon 1 - Client-serveur TCP serveur multi-clients](#jalon-1-\--client\-serveur-tcp-serveur-multi\-clients)
+* [Jalon 1 - Client-serveur TCP et serveur multi-clients](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients)
 * [Jalon 2 - Gestion des utilisateurs](#jalon-2-\--gestion-des-utilisateurs)
 * [Jalon 3 - Gestion des salons de discussion](#jalon-3-\--Gestion-des-salons-de-discussion)
 * [Jalon 4 - Gestion des transferts de fichiers](#jalon-4-\--gestion-des-transferts-de-fichiers)
 
-## Jalon 1 - Client-serveur TCP serveur multi-clients
+## Jalon 1 - Client-serveur TCP et serveur multi-clients
 
 ### Description 
 
