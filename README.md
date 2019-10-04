@@ -99,7 +99,7 @@ Des points malus peuvent être appliqués dans les cas suivants:
 - Mémoire non libérée : -2 points;
 - File descriptors des sockets et des fichiers non fermés : -2 points;
 - Remise en cause (par les enseignants ou le groupe de dev) à raison d'une mauvaise évaluation faite volontairement ou non : -3 points pour l'équipe évaluante;
-- Remise en cause (malicieusement ou non par le groupe de dev) à tort d'une bonne évaluation : -3 points pour l'équipe de dev.
+- Remise en cause (par le groupe de dev malicieusement ou non) à tort d'une bonne évaluation : -3 points pour l'équipe de dev.
 
 
 [Top](#re216-\--projet-de-programmation-réseau)
