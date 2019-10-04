@@ -86,9 +86,9 @@ Voici la grille de notation
 | 14  | Jalon 1 + 2 + 3 |
 | \]14-18\[ | Jalon 1 + 2 + 3 + \]0 - Jalon 4\[ |
 | 18 | Jalon 1 + 2 + 3 + 4 |
-| \[18-20\] | Jalon 1 + 2 + 3 + 4 + _Surprenez-nous + surprenez-vous_ |
+| \[18-20\] | Jalon 1 + 2 + 3 + 4 + _Surprise_ |
 
-_Surprenez-nous + surprenez-vous_ : _Surprenez l'équipe enseignante par vos skills en programmation réseau et ce que vous aurez apporté en plus à votre projet_
+_Surprise_ : _Faites-vous et faites-nous rever! On veut que vous mettiez des paillettes dans notre vie! Surprenez l'équipe enseignante et vos évaluateurs par vos skills en programmation réseau et ce que vous aurez apporté en plus au jalon 1+2+3+4._
 
 
 ### Points bonus
@@ -96,10 +96,10 @@ _Surprenez-nous + surprenez-vous_ : _Surprenez l'équipe enseignante par vos ski
 
 ### Point malus
 Des points malus peuvent être appliqués dans les cas suivants:
-- Mémoire non libérée (-2 points)
-- File descriptors des sockets et des fichiers non fermés (-2 points)
-- Remise en cause à raison d'une mauvaise évaluation faite, volontairement ou non, par le groupe évaluant (-3 points pour l'équipe évaluante)
-- Remise en cause à tort d'une bonne évaluation, malicieusement ou non, faite par le groupe évaluant (-3 points pour l'équipe de dev).
+- Mémoire non libérée : -2 points;
+- File descriptors des sockets et des fichiers non fermés : -2 points;
+- Remise en cause (par les enseignants ou le groupe de dev) à raison d'une mauvaise évaluation faite volontairement ou non : -3 points pour l'équipe évaluante;
+- Remise en cause (malicieusement ou non par le groupe de dev) à tort d'une bonne évaluation : -3 points pour l'équipe de dev.
 
 
 [Top](#re216-\--projet-de-programmation-réseau)
