@@ -36,13 +36,7 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 1. Debugger les segfault sans printf
 Si votre programme crash à cause d'un problème mémoire ou tout autre problème, vous pouvez identifier la ligne exacte en utilisant gdb.
 
-{% highlight console %}
-
-zefefe
-
-{% endhighlight %}
-
-``` gdb --args ./jalon01/RE216_JALON01_CLIENT localhost 8080 ```
+    gdb --args ./jalon01/RE216_JALON01_CLIENT localhost 8080
 
 notez le --args qui vous permet de passer des arguments à votre programme.
 
