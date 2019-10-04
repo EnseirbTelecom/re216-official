@@ -45,7 +45,7 @@ La soumission des jalons se fait sur GitHub en créant une release de votre code
 ### Soumission finale
 15 minutes avant la séance d'évaluation, vous devrez faire une ultime release nommée `rendu_final` de votre code sur votre répository privé. C'est ce code là qui sera évalué.
 
-Votre dernière release doit **obligatoirement** comporté un fichier rendu.txt à la racine de votre réposority qui contient les chaines de caractère :
+Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt à la racine de votre reposority qui contient les chaines de caractères :
 - `jalonx` avec `x` dans {0,1,2,3,4,Surprise} indiquant le dernier jalon atteint dans son intégralité
 - `ongoingy`avec `y` dans {0,1,2,3,4,Surprise} indiquant le jalon en cours s'il y en a un. Si `y` vaut `Surprise`, vous penserez à indiquer ce que vous avez fait en plus du jalon 4 pour permettre aux évaluateurs de savoir quoi tester et de comprendre ce qui a été fait.
 
@@ -64,12 +64,12 @@ Chaque groupe évaluera le code d'un autre groupe en suivant [la fiche d'évalua
 **!!!ATTENTION¡¡¡** Vos camarades n'auront cesse d'essayer de faire crasher votre programme (volontairement ou non) ou encore de tester des cas d'utilisation que vous n'aurez peut être pas prévus ou anticipés. Pensez donc à bien tester les cas limites de votre programme, et à empecher tous crash possible. Ceci est un travail de rigueur pendant le developpement à ne surtout pas négliger. 
 
 ### Evaluation automatique
-A l'issue de ces évaluations, l'équipe enseignante récupérera votre code depuis votre répo github qui sera testé par nos programmes d'évaluation sur :
+A l'issue de ces évaluations, l'équipe enseignante récupérera votre code depuis votre repository github qui sera testé par nos programmes d'évaluation sur :
 
 0. La bonne soumission des jalons en temps et en heure sur votre répository github;
-1. le bon respect de l'implémentation des fonctionnalités spécifiées;
-2. le fonctionnement non erroné en cas de reception et traitement de messages non implémentés et de messages erronés (que ce soit du coté client ou du coté serveur);
-3. la libération de mémoire et la fermeture des sockets.
+1. Le bon respect de l'implémentation des fonctionnalités spécifiées;
+2. Le fonctionnement non erroné en cas de reception et traitement de messages non implémentés et de messages erronés (que ce soit du coté client ou du coté serveur);
+3. La libération de mémoire et la fermeture des sockets.
 
 
 # Notation 
@@ -93,7 +93,7 @@ Voici la grille de notation
 | 18 | Jalon 1 + 2 + 3 + 4 |
 | \[18-20\] | Jalon 1 + 2 + 3 + 4 + _Surprise_ |
 
-_Surprise_ : _Faites-vous et faites-nous rever! On veut que vous mettiez des paillettes dans notre vie! Surprenez l'équipe enseignante et vos évaluateurs par vos skills en programmation réseau et ce que vous aurez apporté en plus au jalon 1+2+3+4._
+_Surprise_ : _Faites-vous et faites-nous rêver ! On veut que vous mettiez des paillettes dans notre vie ! Surprenez l'équipe enseignante et vos évaluateurs par vos skills en programmation réseau et ce que vous aurez apporté en plus au jalon 1+2+3+4._
 
 
 ### Points bonus
@@ -162,15 +162,11 @@ L'objectif de ce jalon est de permettre au serveur de récupérer, stocker et ut
 Grâce à cela, les utilisateurs seront capable de choisir un pseudo, de voir les pseudos des autres utilisateurs connectés, de récupérer des informations sur ces utilisateurs, d’envoyer des messages privés à un utilisateur et d’envoyer des messages de broadcast à tous les utilisateurs.
 Pour faire cela, les utilisateurs devront taper des commandes avant leur message (/nick, /who, /whois <pseudo>, /msgall <msg>, /msg <pseudo> <msg>) qui seront interprétées par le client et le serveur.
 
-À partir de ce jalon, il vous est demandé de ne plus envoyer de simple chaînes de caractères mais d’utiliser la structure suivante pour vos message : 
+À partir de ce jalon, il vous est demandé de ne plus envoyer de simple chaînes de caractères mais d’utiliser la structure suivante pour vos messages : 
 
 ```C
-struct message {
-	int pld_len;
-	char nick_sender[NICK_LEN];
-	enum msg_type type;
-	char infos[INFOS_LEN];
-};
+#define NICK_LEN 128
+#define INFOS_LEN 1024
 
 enum msg_type { 
 	NICKNAME_NEW,
@@ -189,6 +185,32 @@ enum msg_type {
 	FILE_REJECT,
 	FILE_SEND,
 	FILE_ACK
+};
+
+struct message {
+	int pld_len;
+	char nick_sender[NICK_LEN];
+	enum msg_type type;
+	char infos[INFOS_LEN];
+};
+
+static char* msg_type_str[] = {
+	"NICKNAME_NEW",
+	"NICKNAME_LIST",
+	"NICKNAME_INFOS",
+	"ECHO_SEND",
+	"UNICAST_SEND", 
+	"BROADCAST_SEND",
+	"MULTICAST_CREATE",
+	"MULTICAST_LIST",
+	"MULTICAST_JOIN",
+	"MULTICAST_SEND",
+	"MULTICAST_QUIT",
+	"FILE_REQUEST",
+	"FILE_ACCEPT",
+	"FILE_REJECT",
+	"FILE_SEND",
+	"FILE_ACK"
 };
 ```
 
@@ -406,10 +428,10 @@ notez le --args qui vous permet de passer des arguments à votre programme.
 
 Vous entrez alors dans l'interface de GDB.
 
-Tapez "run" pour lancer l'application.
+Tapez "run" (ou "r") pour lancer l'application.
 
 ```
-    (gdb) run
+    (gdb) r
     Starting program: path/to/program/prog arg1 arg2
 
     Program received signal SIGSEGV, Segmentation fault.
@@ -418,10 +440,10 @@ Tapez "run" pour lancer l'application.
     (gdb)  
 ```
 
-de là, vous pouvez voir la ligne qui pose problème et même voir la pile d'appel en tapant "backtrace"
+de là, vous pouvez voir la ligne qui pose problème et même voir la pile d'appel en tapant "backtrace" (ou "bt")
 
 ```
-(gdb) backtrace
+(gdb) bt
 #0  0x0000000000400849 in do_ () at path/to/program/prog.c:14
 #1  0x00000000004008a2 in main (argc=3, argv=0x7fffffffdda8) at path/to/program/prog.c:28
 (gdb) 
@@ -461,14 +483,14 @@ Utile pour être sûr que vous ne laissez pas trainer vos sockets
 Syntaxe pour déclarer les structures :
 
 ```
-struct module{
+struct module {
     int moduleId;
     double moduleGrade;
     char padding[20];
 };
 ```
 
-Syntaxe pour déclarer une variable de type structure :
+Syntaxe pour déclarer une variable de type structure
 
 ``` struct module re216;```
 
@@ -477,27 +499,27 @@ Syntaxe pour accéder aux champs d'une structure
 
 ```
 struct module re216;
-re216.moduleId=5
-re216.moduleGrade=12.5;
+re216.moduleId = 5
+re216.moduleGrade = 12.5;
 ```
 
-Les structure peuvent être manipuler avec des pointeurs aussi
+Les structures peuvent être manipulées avec des pointeurs aussi
 
 ```
 struct module re216;
-struct module *pre216=&re216;
-pre216->moduleId=5;
-pre216->moduleGrade=12.5;
+struct module *pre216 = &re216;
+pre216->moduleId = 5;
+pre216->moduleGrade = 12.5;
 ```
 
-On peut créer des alias pour simplifier le nomage des structures
+On peut créer des alias pour simplifier le nommage des structures
 
 ```
 typedef struct module s_module ;
 
 s_module re216;
-re216.moduleId=1;
-re216.moduleGrade=12.5;
+re216.moduleId = 1;
+re216.moduleGrade = 12.5;
 ```
 
 
@@ -509,39 +531,39 @@ Les pointeurs correspondants : int*, double*, float*, char*
 Obtenir le pointeur d'une variable déjà déclarée, utiliser &
 
 ```
-int a; // variable
-int *pa=&a; // a variable on its pointer
+int a;
+int *pa = &a;
 ```
 
-à l'inverse, pour obtenir la valeur pointée utiliser *
+À l'inverse, pour obtenir la valeur pointée utiliser *
 
 ```
 int a = 5;
 int *pa = &a; 
-if ( (* pa ) == 5){ //cool }
+if ((*pa) == 5){ // }
 ```
 
 Les pointeurs fonctionnent aussi avec les structures, mais avec l'opérateur ->
 
 ```
 struct module re216; 
-re216.moduleId=5; 
-struct module * p_re216 = &re216;
-re216->moduleId=5; //utilise -> et pas le .
+re216.moduleId = 5; 
+struct module *p_re216 = &re216;
+re216->moduleId = 5; //utilise -> et pas le .
 ```
 
-passer un pointeur en paramètre d'une fonction
+Passer un pointeur en paramètre d'une fonction
 
 ```
 int func(int* a, int* b){
 	return *a+*b;
 }
 ...
-int a=5;
-int b=7;
+int a = 5;
+int b = 7;
 int res;
-res= func(&a,&b);
-if( res == 7) { //cool }
+res = func(&a,&b);
+if (res == 7) { // }
 ```
 
 
@@ -552,8 +574,9 @@ On peut convertir les types en C avec l'opérateur (.)
 
 
 ```
-int sum =17, count =5;double mean;
-mean =(double) sum / count;
+int sum = 17, count = 5;
+double mean;
+mean = (double) sum / count;
 ```
 
 Mais c'est surtout utile pour les pointeurs.
@@ -562,24 +585,25 @@ Mais c'est surtout utile pour les pointeurs.
 int main(int argc, char** argv) {
 
 //create a pointer to a structure allocated on the heap with malloc
-struct information * info=malloc(sizeof(struct module));
+struct information *info = malloc(sizeof(struct module));
 
 //clean the data
-memset(info,0,sizeof(mod));
+memset(info, 0, sizeof(mod));
 
 //fill it up with some data
-strcpy(info->base,"firstname"); 
-strcpy(info->base+12,"lastname");
+strcpy(info->base, "firstname"); 
+strcpy(info->base+12, "lastname");
 
 //mod->base is firstname___lastname____
-printf("who am I : %s %s \n",info->base,info->base+10); //this works
+printf("who am I: %s %s \n",info->base,info->base+10);
 
 //but we could also cast the structure to the student structure, and access directly fname and lname
-struct student * stu=(struct student *)info;
+struct student * stu = (struct student*) info;
 
 //stu->fname is firstname  stu->lastname is lastname
-printf("who am I 2 :%s %s\n",stu->fname,stu->lname);
+printf("who am I 2: %s %s\n", stu->fname, stu->lname);
 free(mod);
+
 }
 ```
 
