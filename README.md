@@ -166,33 +166,33 @@ Pour faire cela, les utilisateurs devront taper des commandes avant leur message
 
 ```C
 struct message {
-  int pld_len;
-  char nick_sender[NICK_LEN];
-  enum msg_type type;
-  char infos[INFOS_LEN];
+	int pld_len;
+	char nick_sender[NICK_LEN];
+	enum msg_type type;
+	char infos[INFOS_LEN];
 };
 
 enum msg_type { 
-  NICKNAME_NEW,
-  NICKNAME_LIST,
-  NICKNAME_INFOS,
-  ECHO_SEND,
-  UNICAST_SEND, 
-  BROADCAST_SEND,
-  MULTICAST_CREATE,
-  MULTICAST_LIST,
-  MULTICAST_JOIN,
-  MULTICAST_SEND,
-  MULTICAST_QUIT,
-  FILE_REQUEST,
-  FILE_ACCEPT,
-  FILE_REJECT,
-  FILE_SEND,
-  FILE_ACK
+	NICKNAME_NEW,
+	NICKNAME_LIST,
+	NICKNAME_INFOS,
+	ECHO_SEND,
+	UNICAST_SEND, 
+	BROADCAST_SEND,
+	MULTICAST_CREATE,
+	MULTICAST_LIST,
+	MULTICAST_JOIN,
+	MULTICAST_SEND,
+	MULTICAST_QUIT,
+	FILE_REQUEST,
+	FILE_ACCEPT,
+	FILE_REJECT,
+	FILE_SEND,
+	FILE_ACK
 };
 ```
 
-Cette structure est déclarée dans le fichier ***À MODIFIER QUAND IL Y AURA LE CODE***.
+Cette structure est déclarée dans le fichier msg_struct.h.
 
 La structure s’utilise de la façon suivante:
 
