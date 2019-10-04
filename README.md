@@ -7,7 +7,7 @@
 * [Jalon 3 - Gestion des salons de discussion](#jalon-3-\--Gestion-des-salons-de-discussion)
 * [Jalon 4 - Gestion des transferts de fichiers](#jalon-4-\--gestion-des-transferts-de-fichiers)
 
-## Jalon 1 - Client-serveur TCP + serveur multi-clients
+## Jalon 1 - Client-serveur TCP serveur multi-clients
 
 ### Description 
 
