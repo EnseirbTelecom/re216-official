@@ -92,11 +92,12 @@ _Surprise_ : _Faites-vous et faites-nous rever! On veut que vous mettiez des pai
 
 
 ### Points bonus
-- Tout fonctionne en ipv6 : +1 point
+- Tout fonctionne en ipv6 : +0.5 point
 - 
 
 ### Point malus
 Des points malus peuvent être appliqués dans les cas suivants:
+- Non respect du rendu des jalons aux deadlines indiquées : -2 points;
 - Mémoire non libérée : -2 points;
 - File descriptors des sockets et des fichiers non fermés : -2 points;
 - Remise en cause (par les enseignants ou le groupe de dev) à raison d'une mauvaise évaluation faite volontairement ou non : -3 points pour l'équipe évaluante;
