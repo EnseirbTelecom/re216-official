@@ -2,15 +2,10 @@
 
 
 
-[Jalon 1](#jalon-1)
+[Jalon 1](#jalon-1---Client/serveur-simple-sur-TCP,-avec-serveur-multi-clients)
 
 
-# Jalons 
-
-
-
-
-## Jalon 1 - Etablissement d'un modèle client/serveur "Echo" sur TCP, avec un serveur multi-clients.
+## Jalon 1 - Client/serveur simple sur TCP, avec serveur multi-clients
 
 ### Description
 
