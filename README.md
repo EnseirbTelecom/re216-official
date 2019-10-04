@@ -86,9 +86,9 @@ Voici la grille de notation
 | 14  | Jalon 1 + 2 + 3 |
 | \]14-18\[ | Jalon 1 + 2 + 3 + \]0 - Jalon 4\[ |
 | 18 | Jalon 1 + 2 + 3 + 4 |
-| \[18-20\] | Jalon 1 + 2 + 3 + 4 + _Surprise_ |
+| \[18-20\] | Jalon 1 + 2 + 3 + 4 + _Surprenez-nous + surprenez-vous_ |
 
-_Surprise_ : _Surprenez l'équipe enseignante par vos skills en programmation réseau et ce que vous aurez apporté en plus à votre projet_
+_Surprenez-nous + surprenez-vous_ : _Surprenez l'équipe enseignante par vos skills en programmation réseau et ce que vous aurez apporté en plus à votre projet_
 
 
 ### Points bonus
