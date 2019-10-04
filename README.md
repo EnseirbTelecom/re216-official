@@ -45,6 +45,12 @@ La soumission des jalons se fait sur GitHub en créant une release de votre code
 ### Soumission finale
 15 minutes avant la séance d'évaluation, vous devrez faire une ultime release nommée `rendu_final` de votre code sur votre répository privé. C'est ce code là qui sera évalué.
 
+Votre dernière release doit **obligatoirement** comporté un fichier rendu.txt à la racine de votre réposority qui contient les chaines de caractère :
+- `jalonx` avec `x` dans {0,1,2,3,4,Surprise} indiquant le dernier jalon atteint dans son intégralité
+- `ongoingy`avec `y` {0,1,2,3,4,Surprise} indiquant le jalon en cours s'il y en a un. Si `y` vaut `Surprise`, vous penserez à indiqué ce que vous avez fait en plus du jalon 4 pour permettre aux évaluateurs de savoir quoi tester et de comprendre ce qui a été fait.
+
+
+
 # Evaluation 
 [Top](#re216-\--projet-de-programmation-réseau)
 
