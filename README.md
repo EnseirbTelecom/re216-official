@@ -2,12 +2,13 @@
 
 
 
-[Jalon 1](#jalon-1---Client/serveur-simple-sur-TCP,-avec-serveur-multi-clients)
+[Jalon 1](#jalon-1)
 
 
-## Jalon 1 - Client/serveur simple sur TCP, avec serveur multi-clients
+## Jalon 1 
+### Client/serveur simple sur TCP, avec serveur multi-clients
 
-### Description
+### Description 
 
 Dans ce jalon, vous allez vous concentrer sur la réalisation d'un modèle client/serveur IPv4 où le serveur renvoie au client la chaîne de caractère précédemment envoyée.
 Dans ce modèle de communication, il y a une partie client et une partie serveur. Pour la première partie, le client devra créer une socket TCP (avec une adresse IPv4 et un numéro port renseigné en argument du programme), établir une connexion sur la socket du serveur. L'envoi et la réception de données pourra alors se faire pour le client.
@@ -18,7 +19,6 @@ Le serveur doit être capable gérer plusieurs clients en parallèle. Pour cela,
 
 Le client doit pouvoir gérer en même temps les messages provenant du serveur et le texte tapé au clavier. Pour cela, il faut également utiliser la fonction poll() côté client.
 
-# jalon 1
 
 ### Exigences
 
