@@ -17,7 +17,7 @@ Ce projet consiste en la réalisation d'un grand classique de la programmation r
 
 Le projet a pour objectif la réalisation d'une application de chat client/serveur en C permettant d'échanger des messages entre 2 utilisateurs, entre plusieurs utilisateurs, ou à destination de la totalité des utilisateurs connectés sur le réseau, ainsi que de s'envoyer des fichiers.
 
-L'objectif sous-jacent de ce projet est la manipulation des primitives réseaux et des sockets POSIX en C que vous avez vues en cours (socket(), bind(), listen(), connect(), accept(), send(), receive() ), ainsi que la mise œuvre de communications sur TCP/IP.
+L'objectif sous-jacent de ce projet est la manipulation des primitives réseaux et des sockets POSIX en C que vous avez vues en cours (socket(), bind(), listen(), connect(), accept(), send(), recv() ), ainsi que la mise œuvre de communications sur TCP/IP.
 
 [Top](#re216-\--projet-de-programmation-réseau)
 
