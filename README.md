@@ -223,7 +223,7 @@ La structure s’utilise de la façon suivante:
 - Le champ **type** contient le type de message (cf la liste dans enum msg_type). Ce gens va être utilisé pour différencier les actions demandées par l’utilisateur.
 - Le champ **infos** va contenir des informations à envoyer. Ces informations dépendent du champ **type**.
 
-Juste après ce message, il est possible d’envoyer une chaîne de caractères contenant le payload (i.e. les données utiles) de taille **pld_len**.
+Juste après ce message, il est possible d’envoyer un ensemble d'octet contenant le payload (i.e. les données utiles) de taille **pld_len**.
 
 Dans ce jalon, il faut utiliser les types : NICKNAME_NEW, NICKNAME_LIST, NICKNAME_INFOS, ECHO_SEND, UNICAST_SEND, BROADCAST_SEND.
 
@@ -236,6 +236,8 @@ Les champs **infos** doivent contenir les valeurs suivantes en fonction des cas 
 - Pour **BROADCAST_SEND**, le champ **infos** contient une chaîne de caractères vide.
 
 ### Exigences
+
+**Req2.0** : Les messages échangés entre le client et le serveur doivent impérativement respecter la structure donnée dans le sujet. La seul façon de transmettre un message de taille non-déterminée à l'avance est d'utiliser 2 messages : Un premier avec le champ **pld_len** qui indique la taille du second message, un second qui contient le contenu du mssecond message de taille **pld_len**.
 
 **Req2.1** : Une fois la connexion établie avec le serveur, le client doit s'identifier par son pseudo (avec la commande /nick, type NICKNAME_NEW). Le cas particulier où un utilisateur se connectent avec un pseudo trop long ou un pseudo avec des espaces et autres caractères spéciaux doivent être gérés.
 ```
