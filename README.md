@@ -96,7 +96,7 @@ Voici la grille de notation à titre indicatif seulement.
 | 18 | Jalon 1 + 2 + 3 + 4 |
 | \[18-20\] | Jalon 1 + 2 + 3 + 4 + _Surprise_ |
 
-_Surprise_ : _Faites-vous et faites-nous rêver ! On veut que vous mettiez des paillettes dans notre vie ! Surprenez l'équipe enseignante et vos évaluateurs par vos skills en programmation réseau et ce que vous aurez apporté en plus au jalon 1+2+3+4._
+_Surprise_ : _Faites-vous et faites-nous rêver ! Ajoutez des fonctionnalités à vos programmes en plus des jalonss 1+2+3+4._
 
 ### Points bonus
 - Tout fonctionne en IPv6 et IPV4 : +0.25 point
