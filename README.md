@@ -42,35 +42,38 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 
 La soumission des jalons se fait sur GitHub en créant une release de votre code qui sera disponible à toute instant pour l'équipe enseignante. Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases). Le nom des releases sera `jalonx` avec `x` le numéro du jalon. 
 
+### Deadline des jalons : 
+L'horaire de rendu des jalons est 23h59. 
+
+En ce qui concerne les dates :
+
+- Jalon 1 : 23 octobre 
+- Jalon 2 : 6 novembre 
+- Jalon 3 : 11 novembre
+- Jalon 4 : 15 novembre
+- Rendu final : 15 novembre
+
 ### Soumission finale
-15 minutes avant la séance d'évaluation, vous devrez faire une ultime release nommée `rendu_final` de votre code sur votre répository privé. C'est ce code là qui sera évalué.
+Cette soumission prendra la forme d'un dernière release nommée `rendu_final` de votre code sur votre répository privé. C'est ce code là qui sera évalué.
+Pour etre évalué, votre doit **impérativement** compiler sans erreurs et sans warning sur les machines de l'enseirb OU sur une machine linux ubuntu. 
 
 Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt à la racine de votre reposority qui contient les chaines de caractères :
 - `jalonx` avec `x` dans {0,1,2,3,4,Surprise} indiquant le dernier jalon atteint dans son intégralité
 - `ongoingy`avec `y` dans {0,1,2,3,4,Surprise} indiquant le jalon en cours s'il y en a un. Si `y` vaut `Surprise`, vous penserez à indiquer ce que vous avez fait en plus du jalon 4 pour permettre aux évaluateurs de savoir quoi tester et de comprendre ce qui a été fait.
 
 
-
 # Evaluation 
 [Top](#re216-\--projet-de-programmation-réseau)
 
-L'évaluation de votre travail se fera en suivant deux méthodes : une évaluation par les pairs, et une évaluation automatique via des programmes de tests.
-
-### Evaluation par les pairs
-Votre projet sera testé et évalué par vos pairs (les T2) pendant la dernière heure de la 4ième et derniere séance de projet en suivant la politique d'évaluation en double aveugle (double blind policy) : les identités des auteurs du code ainsi que des évaluateurs ne sont pas révélées. Chaque projet sera anonymisé et aléatoirement assigné pour évaluation à un autre groupe de projet anonyme lui aussi. 
-
-Chaque groupe évaluera le code d'un autre groupe en suivant [la fiche d'évaluation](evaluation_template.xlsx) qui sera à rendre à l'équipe enseignante à la fin de la séance selon les modalités qui seront indiquées.
-
-**!!!ATTENTION¡¡¡** Vos camarades n'auront cesse d'essayer de faire crasher votre programme (volontairement ou non) ou encore de tester des cas d'utilisation que vous n'aurez peut être pas prévus ou anticipés. Pensez donc à bien tester les cas limites de votre programme, et à empecher tous crash possible. Ceci est un travail de rigueur pendant le developpement à ne surtout pas négliger. 
+L'évaluation de votre travail se fera en suivant deux méthodes : une évaluation automatique via des programmes de tests, et une évaluation détaillée.
 
 ### Evaluation automatique
-A l'issue de ces évaluations, l'équipe enseignante récupérera votre code depuis votre repository github qui sera testé par nos programmes d'évaluation sur :
+A l'issue de ces évaluations, vos releases seront récupérés depuis votre repository github qui sera testé par des programmes d'évaluation sur :
 
 0. La bonne soumission des jalons en temps et en heure sur votre répository github;
 1. Le bon respect de l'implémentation des fonctionnalités spécifiées;
 2. Le fonctionnement non erroné en cas de reception et traitement de messages non implémentés et de messages erronés (que ce soit du coté client ou du coté serveur);
 3. La libération de mémoire et la fermeture des sockets.
-
 
 # Notation 
 [Top](#re216-\--projet-de-programmation-réseau)
@@ -79,7 +82,7 @@ Ce projet sera noté en suivant la grille de notation suivante et en prenant en 
 
 ### Grille de notation 
 
-Voici la grille de notation 
+Voici la grille de notation à titre indicatif seulement.
 
 | Note | Réalisation non buggée des requirements du(es) jalon(s) |
 | ------ | ------ |
@@ -95,19 +98,15 @@ Voici la grille de notation
 
 _Surprise_ : _Faites-vous et faites-nous rêver ! On veut que vous mettiez des paillettes dans notre vie ! Surprenez l'équipe enseignante et vos évaluateurs par vos skills en programmation réseau et ce que vous aurez apporté en plus au jalon 1+2+3+4._
 
-
 ### Points bonus
 - Tout fonctionne en IPv6 et IPV4 : +0.25 point
-
 
 ### Point malus
 Des points malus peuvent être appliqués dans les cas suivants:
 - Non respect du rendu des jalons aux deadlines indiquées : -2 points;
 - Mémoire non libérée : -2 points;
+- Non utilisation de fonction pour rendre le code clair (i.e., si votre main() fait plus de 200 lignes) : -4
 - File descriptors des sockets et des fichiers non fermés : -2 points;
-- Remise en cause (par les enseignants ou le groupe de dev) à raison d'une mauvaise évaluation faite volontairement ou non : -3 points pour l'équipe évaluante;
-- Remise en cause (par le groupe de dev malicieusement ou non) à tort d'une bonne évaluation : -3 points pour l'équipe de dev.
-
 
 # Jalons 
 
@@ -123,8 +122,7 @@ Dans ce jalon, une fois la connexion établie, le client doit envoyer une chaîn
 
 Le serveur doit être capable gérer plusieurs clients en parallèle. Pour cela, il faut utiliser un unique processus pour réaliser toutes les tâches en utilisant la fonction **poll()**. Les informations des clients (descripteur de fichier de la socket client et adresse/port) doivent être stockés par le serveur dans une liste chaînée.
 
-Le client doit pouvoir gérer en même temps les messages provenant du serveur et le texte tapé au clavier. Pour cela, il faut également utiliser la fonction poll() côté client.
-
+Le client doit pouvoir gérer en même temps les messages provenant du serveur et le texte tapé au clavier. Pour cela, il faut également utiliser la fonction poll() côté client sur l'entrée standard du programme et la socket pour la communication avec le serveur.
 
 ### Exigences
 
