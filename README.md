@@ -73,7 +73,7 @@ A l'issue de ces évaluations, vos releases seront récupérés depuis votre rep
 0. La bonne soumission des jalons en temps et en heure sur votre répository github;
 1. Le bon respect de l'implémentation des fonctionnalités spécifiées;
 2. Le fonctionnement non erroné en cas de reception et traitement de messages non implémentés et de messages erronés (que ce soit du coté client ou du coté serveur);
-3. La libération de mémoire et la fermeture des sockets.
+3. La libération de mémoire et la fermeture des sockets (utilisation de valgrind et lsof)
 
 # Notation 
 [Top](#re216-\--projet-de-programmation-réseau)
@@ -105,7 +105,8 @@ _Surprise_ : _Faites-vous et faites-nous rêver ! Ajoutez des fonctionnalités �
 Des points malus peuvent être appliqués dans les cas suivants:
 - Non respect du rendu des jalons aux deadlines indiquées : -2 points;
 - Mémoire non libérée : -2 points;
-- Non utilisation de fonction pour rendre le code clair (i.e., si votre main() fait plus de 200 lignes) : -4
+- Mauvaise reception des données lors d'operation de type read/write sur les sockets : -2 points
+- Non utilisation de fonction pour rendre le code clair (i.e., si votre main() fait plus de 200 lignes) : -2 points
 - File descriptors des sockets et des fichiers non fermés : -2 points;
 
 # Jalons 
