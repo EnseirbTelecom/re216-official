@@ -41,10 +41,7 @@ N'oubliez pas de **publiez votre release** et de ne pas la garder en tant que dr
 Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases). Le nom des releases sera `jalonx` avec `x` le numéro du jalon. 
 Chaque soumission sera analysée par un detecteur de plagiat. 
 
-### Deadline des jalons : 
-L'horaire de rendu des jalons est 23h59. 
-
-En ce qui concerne les dates :
+En ce qui concerne les deadlines de rendu des jalons:
 
 - Jalon 1 : 23 octobre 
 - Jalon 2 : 6 novembre 
@@ -53,9 +50,7 @@ En ce qui concerne les dates :
 - Rendu final : 15 novembre
 
 ### Soumission finale
-Cette soumission prendra la forme d'un dernière release nommée `rendu_final` de votre code.
-C'est ce code là qui sera évalué.
-Pour etre évalué, votre soumission doit **impérativement** compiler sans erreurs et sans warning sur les machines de l'enseirb.
+Cette soumission prendra la forme d'un dernière release nommée `rendu_final` de votre code qui devra **impérativement** compiler sans erreurs et sans warning sur les machines de l'enseirb.
 
 Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt à la racine de votre reposority qui contient les chaines de caractères :
 - `jalonx` avec `x` dans {0,1,2,3,4} indiquant le dernier jalon atteint dans son intégralité
