@@ -34,7 +34,7 @@ Chaque soumission sera analysée par un detecteur de plagiat.
 
 # Contenu du depot git
 
-Lorsque vous récupérez ce dépot git, il comprend les dossiers _sample-jalon1_ et _sample-jalon2_ qui contiennent des squelettes de codes pour les jalons 1 et 2 ainsi qu'un Makefile. Vous avez également le support du cours ainsi que les dossiers vides _jalon1, jalon2, jalon3, jalon4_ destinés à accueillir le code de chaque jalon. 
+Lorsque vous récupérez ce dépot git, il comprend les dossiers _./sample-jalon1_ et _./sample-jalon2_ qui contiennent des squelettes de codes pour les jalons 1 et 2 ainsi qu'un Makefile. Vous avez également le support du cours ainsi que les dossiers vides _./jalon1, ./jalon2, ./jalon3, ./jalon4_ destinés à accueillir le code de chaque jalon. 
 
 # Soumission de code 
 [Top](#re216-\--projet-de-programmation-réseau)
