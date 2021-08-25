@@ -27,7 +27,8 @@ L'objectif sous-jacent de ce projet est la manipulation de l'API socket POSIX en
 
 Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et **chaque jalon doit être intégralement réalisé avant de passer au jalon suivant**. Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée.
 
-Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet qui s'étalera sur 4 séances encadrées de 2h40 soit 10h40 au total. Le quantité de travail à fournir hors classe est de l'ordre du double de celle des séances encadréees. 
+Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet.
+La durée de réalisation ce projet est de l'ordre de 21h20 dont 10h40 pendant les séances encadrées.
 
 Le travail doit être réalisé en monome.
 Chaque soumission sera analysée par un detecteur de plagiat. 
