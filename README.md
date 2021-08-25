@@ -12,7 +12,7 @@
 6. [Tips and Tricks](#tips-and-tricks)
 7. [Rappel de C](#rappel-de-c)
 
-# Contexte 
+### Contexte 
 [Top](#re216-\--projet-de-programmation-réseau)
 
 Ce projet consiste en la réalisation d'un grand classique de la programmation réseau, un cas pratique de discussion instantanée de type client/serveur. A titre d'exemple, vous pouvez jeter un coup d'œil au protocole IRC (Internet Relay Chat) défini originellement par la RFC1459.
@@ -22,7 +22,7 @@ L'objectif sous-jacent de ce projet est la manipulation de l'API socket POSIX en
 
 
 
-## Déroulement 
+### Déroulement 
 [Top](#re216-\--projet-de-programmation-réseau)
 
 Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et **chaque jalon doit être intégralement réalisé avant de passer au jalon suivant**. Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée.
@@ -33,14 +33,14 @@ La durée de réalisation ce projet est de l'ordre de 21h20 dont 10h40 pendant l
 Le travail doit être réalisé en monome.
 Chaque soumission sera analysée par un detecteur de plagiat. 
 
-## Contenu du depot git
+### Contenu du depot git
 
 Lorsque vous récupérez ce dépot git, il comprend les dossiers _./sample-jalon1_ et _./sample-jalon2_ qui contiennent des squelettes de codes pour les jalons 1 et 2 ainsi qu'un Makefile. Vous avez également le support du cours ainsi que les dossiers vides _./jalon1, ./jalon2, ./jalon3, ./jalon4_ destinés à accueillir le code de chaque jalon. 
 
-# Soumission de code 
+### Soumission de code 
 [Top](#re216-\--projet-de-programmation-réseau)
 
-### Soumission des jalons
+#### Soumission des jalons
 
 La soumission des jalons se fait sur GitHub en créant une release de votre code. Avant chaque release, **assurez vous d'avoir bien mis le code du jalon courrant dans le repertoire qui convient** (i.e., _./jalon1_ pour le code du jalon 1, etc.).
 Une release de code est une capture de l'état de vos fichiers disponibles sur votre dépot github à un instant _t_. _Inutile de mettre des fichiers attachés à la release_, l'équipe enseignante les ignorera dans l'évaluation.
