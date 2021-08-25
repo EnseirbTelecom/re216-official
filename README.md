@@ -15,18 +15,18 @@
 # Contexte 
 [Top](#re216-\--projet-de-programmation-réseau)
 
-Ce projet consiste en la réalisation d'un grand classique de la programmation réseau, un cas pratique de discussion instantanée de type client/serveur. A titre d'exemple et de curiosité, vous pouvez jeter un coup d'œil au protocole IRC (Internet Relay Chat) défini originellement par la RFC1459.
+Ce projet consiste en la réalisation d'un grand classique de la programmation réseau, un cas pratique de discussion instantanée de type client/serveur. A titre d'exemple, vous pouvez jeter un coup d'œil au protocole IRC (Internet Relay Chat) défini originellement par la RFC1459.
 
 Le projet a pour objectif la réalisation d'une application de chat client/serveur en C permettant d'échanger des messages entre 2 utilisateurs, entre plusieurs utilisateurs, ou à destination de la totalité des utilisateurs connectés sur le réseau, ainsi que de s'envoyer des fichiers.
 
-L'objectif sous-jacent de ce projet est la manipulation des primitives réseaux et des sockets POSIX en C que vous avez vues en cours (socket(), bind(), listen(), connect(), accept(), send(), recv() ), ainsi que la mise œuvre de communications sur TCP/IP.
+L'objectif sous-jacent de ce projet est la manipulation de l'API socket POSIX en C vue en cours, ainsi que la mise œuvre de communications sur TCP/IP.
 
 
 
 # Déroulement 
 [Top](#re216-\--projet-de-programmation-réseau)
 
-Pour réaliser ce système, vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et chaque jalon doit être atteint avant de passer à l'étape suivante. Une fois le jalon atteint, il faut le soumettre à l'équipe enseignante au travers de la procédure qui vous est donnée. Il est estimé qu'au minimum un jalon doit être atteint par séance de projet.
+Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et chaque jalon doit être atteint avant de passer à l'étape suivante. Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée. Il est estimé qu'au minimum un jalon doit être atteint par séance de projet.
 
 Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet qui s'étalera sur 4 séances encadrées de 2h40 soit 10h40 au total. Le quantité de travail à fournir hors classe est de l'ordre du double de celle des séances encadréees. 
 
