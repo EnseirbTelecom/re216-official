@@ -13,7 +13,6 @@
 7. [Rappel de C](#rappel-de-c)
 
 ### Contexte 
-[Top](#re216-\--projet-de-programmation-réseau)
 
 Ce projet consiste en la réalisation d'un grand classique de la programmation réseau, un cas pratique de discussion instantanée de type client/serveur. A titre d'exemple, vous pouvez jeter un coup d'œil au protocole IRC (Internet Relay Chat) défini originellement par la RFC1459.
 
@@ -23,7 +22,6 @@ L'objectif sous-jacent de ce projet est la manipulation de l'API socket POSIX en
 
 
 ### Déroulement 
-[Top](#re216-\--projet-de-programmation-réseau)
 
 Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et **chaque jalon doit être intégralement réalisé avant de passer au jalon suivant**. Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée.
 
@@ -37,10 +35,7 @@ Chaque soumission sera analysée par un detecteur de plagiat.
 
 Lorsque vous récupérez ce dépot git, il comprend les dossiers _./sample-jalon1_ et _./sample-jalon2_ qui contiennent des squelettes de codes pour les jalons 1 et 2 ainsi qu'un Makefile. Vous avez également le support du cours ainsi que les dossiers vides _./jalon1, ./jalon2, ./jalon3, ./jalon4_ destinés à accueillir le code de chaque jalon. 
 
-### Soumission de code 
-[Top](#re216-\--projet-de-programmation-réseau)
-
-#### Soumission des jalons
+### Soumission des jalons
 
 La soumission des jalons se fait sur GitHub en créant une release de votre code. Avant chaque release, **assurez vous d'avoir bien mis le code du jalon courrant dans le repertoire qui convient** (i.e., _./jalon1_ pour le code du jalon 1, etc.).
 Une release de code est une capture de l'état de vos fichiers disponibles sur votre dépot github à un instant _t_. _Inutile de mettre des fichiers attachés à la release_, l'équipe enseignante les ignorera dans l'évaluation.
@@ -70,7 +65,6 @@ Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt 
 
 
 # Evaluation 
-[Top](#re216-\--projet-de-programmation-réseau)
 
 L'évaluation de votre travail se fera en suivant des critères suiavnts:
 
@@ -80,7 +74,6 @@ L'évaluation de votre travail se fera en suivant des critères suiavnts:
 3. La libération de mémoire et la fermeture des sockets (utilisation de valgrind et lsof)
 
 # Notation 
-[Top](#re216-\--projet-de-programmation-réseau)
 
 L'évaluation du projet suivra la grille de notation suivante et prendra en compte des points bonus/malus.
 
