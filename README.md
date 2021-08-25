@@ -22,7 +22,7 @@ L'objectif sous-jacent de ce projet est la manipulation de l'API socket POSIX en
 
 
 
-# Déroulement 
+## Déroulement 
 [Top](#re216-\--projet-de-programmation-réseau)
 
 Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et **chaque jalon doit être intégralement réalisé avant de passer au jalon suivant**. Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée.
@@ -33,7 +33,7 @@ La durée de réalisation ce projet est de l'ordre de 21h20 dont 10h40 pendant l
 Le travail doit être réalisé en monome.
 Chaque soumission sera analysée par un detecteur de plagiat. 
 
-# Contenu du depot git
+## Contenu du depot git
 
 Lorsque vous récupérez ce dépot git, il comprend les dossiers _./sample-jalon1_ et _./sample-jalon2_ qui contiennent des squelettes de codes pour les jalons 1 et 2 ainsi qu'un Makefile. Vous avez également le support du cours ainsi que les dossiers vides _./jalon1, ./jalon2, ./jalon3, ./jalon4_ destinés à accueillir le code de chaque jalon. 
 
