@@ -25,7 +25,7 @@ L'objectif sous-jacent de ce projet est la manipulation de l'API socket POSIX en
 # Déroulement 
 [Top](#re216-\--projet-de-programmation-réseau)
 
-Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et chaque jalon doit être atteint avant de passer à l'étape suivante. Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée.
+Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et **chaque jalon doit être atteint avant de passer à l'étape suivante**. Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée.
 
 Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet qui s'étalera sur 4 séances encadrées de 2h40 soit 10h40 au total. Le quantité de travail à fournir hors classe est de l'ordre du double de celle des séances encadréees. 
 
@@ -85,7 +85,7 @@ Ce projet sera noté en suivant la grille de notation suivante et en prenant en 
 
 ### Grille de notation 
 
-Voici la grille de notation à titre indicatif seulement. **Pour pouvoir prétendre à etre noté sur un jalon donné, toutes les fonctionnalités et spécificités du jalon précédent doivent être implémenté sans erreurs**
+Voici la grille de notation à titre indicatif seulement. **Pour pouvoir prétendre à etre noté sur un jalon donné, toutes les fonctionnalités et spécificités du jalon précédent doivent être implémentées sans erreurs**
 
 | Note | Réalisation non buggée des requirements du(es) jalon(s) |
 | ------ | ------ |
