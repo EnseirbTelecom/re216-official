@@ -21,7 +21,7 @@ L'objectif sous-jacent de ce projet est la manipulation de l'API socket POSIX en
 
 
 
-### Déroulement 
+### Déroulement global
 
 Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet. Le travail doit être réalisé en monome.
 Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et **chaque jalon doit être intégralement réalisé avant de passer au jalon suivant**. Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée.
@@ -62,7 +62,7 @@ Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt 
 - `ongoingy`avec `y` dans {0,1,2,3,4} indiquant le jalon en cours s'il y en a un.
 
 
-# Evaluation 
+### Evaluation 
 
 L'évaluation de votre travail se fera en suivant des critères suiavnts:
 
@@ -71,7 +71,7 @@ L'évaluation de votre travail se fera en suivant des critères suiavnts:
 2. Le fonctionnement non erroné en cas de reception et traitement de messages non implémentés et de messages erronés (que ce soit du coté client ou du coté serveur);
 3. La libération de mémoire et la fermeture des sockets (utilisation de valgrind et lsof)
 
-# Notation 
+### Notation 
 
 L'évaluation du projet suivra la grille de notation suivante et prendra en compte des points bonus/malus.
 
