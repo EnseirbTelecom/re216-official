@@ -28,9 +28,10 @@ L'objectif sous-jacent de ce projet est la manipulation des primitives réseaux 
 
 Pour réaliser ce système, vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et chaque jalon doit être atteint avant de passer à l'étape suivante. Une fois le jalon atteint, il faut le soumettre à l'équipe enseignante au travers de la procédure qui vous est donnée. Il est estimé qu'au minimum un jalon doit être atteint par séance de projet.
 
-Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet qui s'étalera sur 3,5 séances encadrées de 2h40 (soit 9h20 au total). Le quantité de travail à fournir hors classe est de l'ordre du simple au double de celle des séances encadréees. 
+Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet qui s'étalera sur 4 séances encadrées de 2h40 soit 10h40 au total. Le quantité de travail à fournir hors classe est de l'ordre du double de celle des séances encadréees. 
 
-Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléatoirement par l'équipe enseignante avant le début du projet. 
+Le travail doit être réalisé en monome.
+Chaque soumission sera analysée par un detecteur de plagiarisme. 
 
 [Support de cours](RE216_cours.pdf)
 
@@ -40,7 +41,9 @@ Le travail doit être fait en groupe de 2 étudiants qui sera déterminé aléat
 
 ### Soumission des jalons
 
-La soumission des jalons se fait sur GitHub en créant une release de votre code qui sera disponible à toute instant pour l'équipe enseignante. Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases). Le nom des releases sera `jalonx` avec `x` le numéro du jalon. 
+La soumission des jalons se fait sur GitHub en créant une release de votre code. 
+Une release de code est une capture de l'état de vos fichiers disponibles sur votre dépot github à un instant t. Inutile de mettre des fichiers attachés à la release, l'équipe enseignante les ignorera dans l'évaluation.
+Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases). Le nom des releases sera `jalonx` avec `x` le numéro du jalon. 
 
 ### Deadline des jalons : 
 L'horaire de rendu des jalons est 23h59. 
@@ -54,21 +57,19 @@ En ce qui concerne les dates :
 - Rendu final : 15 novembre
 
 ### Soumission finale
-Cette soumission prendra la forme d'un dernière release nommée `rendu_final` de votre code sur votre répository privé. C'est ce code là qui sera évalué.
-Pour etre évalué, votre doit **impérativement** compiler sans erreurs et sans warning sur les machines de l'enseirb OU sur une machine linux ubuntu. 
+Cette soumission prendra la forme d'un dernière release nommée `rendu_final` de votre code.
+C'est ce code là qui sera évalué.
+Pour etre évalué, votre soumission doit **impérativement** compiler sans erreurs et sans warning sur les machines de l'enseirb.
 
 Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt à la racine de votre reposority qui contient les chaines de caractères :
-- `jalonx` avec `x` dans {0,1,2,3,4,Surprise} indiquant le dernier jalon atteint dans son intégralité
-- `ongoingy`avec `y` dans {0,1,2,3,4,Surprise} indiquant le jalon en cours s'il y en a un. Si `y` vaut `Surprise`, vous penserez à indiquer ce que vous avez fait en plus du jalon 4 pour permettre aux évaluateurs de savoir quoi tester et de comprendre ce qui a été fait.
+- `jalonx` avec `x` dans {0,1,2,3,4} indiquant le dernier jalon atteint dans son intégralité
+- `ongoingy`avec `y` dans {0,1,2,3,4} indiquant le jalon en cours s'il y en a un.
 
 
 # Evaluation 
 [Top](#re216-\--projet-de-programmation-réseau)
 
-L'évaluation de votre travail se fera en suivant deux méthodes : une évaluation automatique via des programmes de tests, et une évaluation détaillée.
-
-### Evaluation automatique
-A l'issue de ces évaluations, vos releases seront récupérés depuis votre repository github qui sera testé par des programmes d'évaluation sur :
+L'évaluation de votre travail se fera en suivant des critères suiavnts:
 
 0. La bonne soumission des jalons en temps et en heure sur votre répository github;
 1. Le bon respect de l'implémentation des fonctionnalités spécifiées;
@@ -82,7 +83,7 @@ Ce projet sera noté en suivant la grille de notation suivante et en prenant en 
 
 ### Grille de notation 
 
-Voici la grille de notation à titre indicatif seulement.
+Voici la grille de notation à titre indicatif seulement. **Pour pouvoir prétendre à etre noté sur un jalon donné, toutes les fonctionnalités et spécificités du jalon précédent doivent être implémenté sans erreurs**
 
 | Note | Réalisation non buggée des requirements du(es) jalon(s) |
 | ------ | ------ |
