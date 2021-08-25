@@ -23,13 +23,10 @@ L'objectif sous-jacent de ce projet est la manipulation de l'API socket POSIX en
 
 ### Déroulement 
 
+Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet. Le travail doit être réalisé en monome.
 Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et **chaque jalon doit être intégralement réalisé avant de passer au jalon suivant**. Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée.
-
-Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet.
 La durée de réalisation ce projet est de l'ordre de 21h20 dont 10h40 pendant les séances encadrées.
 
-Le travail doit être réalisé en monome.
-Chaque soumission sera analysée par un detecteur de plagiat. 
 
 ### Contenu du depot git
 
@@ -42,6 +39,7 @@ Une release de code est une capture de l'état de vos fichiers disponibles sur v
 
 N'oubliez pas de **publiez votre release** et de ne pas la garder en tant que draft uniquement. Elle sera ignorée dans le cas échéant.
 Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases). Le nom des releases sera `jalonx` avec `x` le numéro du jalon. 
+Chaque soumission sera analysée par un detecteur de plagiat. 
 
 ### Deadline des jalons : 
 L'horaire de rendu des jalons est 23h59. 
