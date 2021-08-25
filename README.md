@@ -25,22 +25,23 @@ L'objectif sous-jacent de ce projet est la manipulation de l'API socket POSIX en
 # Déroulement 
 [Top](#re216-\--projet-de-programmation-réseau)
 
-Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et chaque jalon doit être atteint avant de passer à l'étape suivante. Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée. Il est estimé qu'au minimum un jalon doit être atteint par séance de projet.
+Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et chaque jalon doit être atteint avant de passer à l'étape suivante. Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée.
 
 Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet qui s'étalera sur 4 séances encadrées de 2h40 soit 10h40 au total. Le quantité de travail à fournir hors classe est de l'ordre du double de celle des séances encadréees. 
 
 Le travail doit être réalisé en monome.
-Chaque soumission sera analysée par un detecteur de plagiarisme. 
+Chaque soumission sera analysée par un detecteur de plagiat. 
 
-[Support de cours](RE216_cours.pdf)
+# Contenu du depot git
 
+Lorsque vous récupérez ce dépot git, il comprend les dossiers _sample-jalon1_ et _sample-jalon2_ qui contiennent des squelettes de codes pour les jalons 1 et 2 ainsi qu'un Makefile. Vous avez également le support du cours ainsi que les dossiers vides _jalon1, jalon2, jalon3, jalon4_ destinés à accueillir le code de chaque jalon. 
 
 # Soumission de code 
 [Top](#re216-\--projet-de-programmation-réseau)
 
 ### Soumission des jalons
 
-La soumission des jalons se fait sur GitHub en créant une release de votre code. 
+La soumission des jalons se fait sur GitHub en créant une release de votre code. Avant chaque release, **assurez vous d'avoir bien mis le code du jalon courrant dans le repertoire qui convient** (i.e., jalon1 pour le code du jalon1, etc.).
 Une release de code est une capture de l'état de vos fichiers disponibles sur votre dépot github à un instant _t_. _Inutile de mettre des fichiers attachés à la release_, l'équipe enseignante les ignorera dans l'évaluation.
 N'oubliez pas de **publiez votre release** et de ne pas la garder en tant que draft uniquement. Elle sera ignorée dans le cas échéant.
 Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases). Le nom des releases sera `jalonx` avec `x` le numéro du jalon. 
