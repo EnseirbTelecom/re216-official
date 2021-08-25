@@ -74,7 +74,7 @@ Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt 
 
 L'évaluation de votre travail se fera en suivant des critères suiavnts:
 
-0. La bonne soumission des jalons en temps et en heure sur votre répository github;
+0. La bonne soumission des jalons en temps et en heure sur votre dépot github;
 1. Le bon respect de l'implémentation des fonctionnalités spécifiées;
 2. Le fonctionnement non erroné en cas de reception et traitement de messages non implémentés et de messages erronés (que ce soit du coté client ou du coté serveur);
 3. La libération de mémoire et la fermeture des sockets (utilisation de valgrind et lsof)
@@ -82,7 +82,7 @@ L'évaluation de votre travail se fera en suivant des critères suiavnts:
 # Notation 
 [Top](#re216-\--projet-de-programmation-réseau)
 
-Ce projet sera noté en suivant la grille de notation suivante et en prenant en compte des points bonus et malus.
+L'évaluation du projet suivra la grille de notation suivante et prendra en compte des points bonus/malus.
 
 ### Grille de notation 
 
