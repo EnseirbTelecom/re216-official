@@ -66,11 +66,14 @@ L'évaluation de votre travail se fera en suivant des critères suiavnts:
 2. Le fonctionnement non erroné en cas de reception et traitement de messages non implémentés et de messages erronés (que ce soit du coté client ou du coté serveur);
 3. La libération de mémoire et la fermeture des sockets (utilisation de valgrind et lsof)
 
-### Notation 
-
 L'évaluation du projet suivra la grille de notation suivante et prendra en compte des points bonus/malus.
 
-### Grille de notation 
+- Tout fonctionne en IPv6 et IPV4 : +0.25 point;
+- Non respect du rendu des jalons aux deadlines indiquées : -2 points;
+- Mémoire non libérée : -2 points;
+- Mauvaise reception des données lors d'operation de type read/write sur les sockets : -2 points
+- Non utilisation de fonction pour rendre le code clair (i.e., si votre main() fait plus de 200 lignes) : -2 points
+- File descriptors des sockets et des fichiers non fermés : -2 points;
 
 Voici la grille de notation à titre indicatif seulement. **Pour pouvoir prétendre à etre noté sur un jalon donné, toutes les fonctionnalités et spécificités du jalon précédent doivent être implémentées sans erreurs**
 
@@ -88,16 +91,7 @@ Voici la grille de notation à titre indicatif seulement. **Pour pouvoir préten
 
 _Surprise_ : _Faites-vous et faites-nous rêver ! Ajoutez des fonctionnalités à vos programmes en plus des jalonss 1+2+3+4._
 
-### Points bonus
-- Tout fonctionne en IPv6 et IPV4 : +0.25 point
 
-### Point malus
-Des points malus peuvent être appliqués dans les cas suivants:
-- Non respect du rendu des jalons aux deadlines indiquées : -2 points;
-- Mémoire non libérée : -2 points;
-- Mauvaise reception des données lors d'operation de type read/write sur les sockets : -2 points
-- Non utilisation de fonction pour rendre le code clair (i.e., si votre main() fait plus de 200 lignes) : -2 points
-- File descriptors des sockets et des fichiers non fermés : -2 points;
 
 # Jalons 
 
