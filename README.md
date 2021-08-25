@@ -41,7 +41,7 @@ Chaque soumission sera analysée par un detecteur de plagiarisme.
 ### Soumission des jalons
 
 La soumission des jalons se fait sur GitHub en créant une release de votre code. 
-Une release de code est une capture de l'état de vos fichiers disponibles sur votre dépot github à un instant t. Inutile de mettre des fichiers attachés à la release, l'équipe enseignante les ignorera dans l'évaluation.
+Une release de code est une capture de l'état de vos fichiers disponibles sur votre dépot github à un instant _t_. _Inutile de mettre des fichiers attachés à la release_, l'équipe enseignante les ignorera dans l'évaluation.
 Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases). Le nom des releases sera `jalonx` avec `x` le numéro du jalon. 
 
 ### Deadline des jalons : 
