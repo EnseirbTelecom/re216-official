@@ -42,11 +42,10 @@ Chaque soumission sera analysée par un detecteur de plagiat.
 
 En ce qui concerne les deadlines de rendu des jalons:
 
-- Jalon 1 : 23 octobre 
-- Jalon 2 : 6 novembre 
-- Jalon 3 : 11 novembre
-- Jalon 4 : 15 novembre
-- Rendu final : 15 novembre
+- Jalon 1 : 01 octobre 23h59
+- Jalon 2 : 08 octobre 23h59
+- Jalon 3 : 19 octobre 23h59
+- Jalon 4 et rendu final : 24 octobre 23h59
 
 ### Soumission finale
 Cette soumission prendra la forme d'un dernière release nommée `rendu_final` de votre code qui devra **impérativement** compiler sans erreurs et sans warning sur les machines de l'enseirb.
@@ -58,7 +57,7 @@ Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt 
 
 ### Evaluation 
 
-L'évaluation de votre travail se fera en suivant des critères suiavnts:
+L'évaluation de votre travail se fera en fonction des critères suivants:
 
 0. La bonne soumission des jalons en temps et en heure sur votre dépot github;
 1. Le bon respect de l'implémentation des fonctionnalités spécifiées;
@@ -78,14 +77,10 @@ Voici la grille de notation à titre indicatif seulement. **Pour pouvoir préten
 
 | Note | Réalisation non buggée des requirements du(es) jalon(s) |
 | ------ | ------ |
-| \[0-5\[ | \[0 - Jalon 1\[ |
-| 5 | Jalons 1 |
-| \]5-8\[ | Jalon 1 + ]0 - Jalon 2\[ | 
-| 8 | Jalon 1 + 2 |
-| \]8-14\[  | Jalon 1 + 2 + \]0 - Jalon 3\[ |
-| 14  | Jalon 1 + 2 + 3 |
-| \]14-18\[ | Jalon 1 + 2 + 3 + \]0 - Jalon 4\[ |
-| 18 | Jalon 1 + 2 + 3 + 4 |
+| \[0-4\[ | \[0 - Jalon 1\[ |
+| \[4-8\[ | Jalon 1 + ]0 - Jalon 2\[ | 
+| \[8-14\[  | Jalon 1 + 2 + \]0 - Jalon 3\[ |
+| \[14-18\[ | Jalon 1 + 2 + 3 + \]0 - Jalon 4\[ |
 | \[18-20\] | Jalon 1 + 2 + 3 + 4 + _Surprise_ |
 
 _Surprise_ : _Faites-vous et faites-nous rêver ! Ajoutez des fonctionnalités à vos programmes en plus des jalonss 1+2+3+4._
