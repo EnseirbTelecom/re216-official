@@ -78,10 +78,10 @@ Voici la grille de notation à titre indicatif seulement. **Pour pouvoir préten
 | Note | Réalisation non buggée des requirements du(es) jalon(s) |
 | ------ | ------ |
 | \[0-4\[ | \[0 - Jalon 1\[ |
-| \[4-8\[ | Jalon 1 + ]0 - Jalon 2\[ | 
-| \[8-14\[  | Jalon 1 + 2 + \]0 - Jalon 3\[ |
-| \[14-18\[ | Jalon 1 + 2 + 3 + \]0 - Jalon 4\[ |
-| \[18-20\] | Jalon 1 + 2 + 3 + 4 + _Surprise_ |
+| \[4-8\[ | \[Jalon 1 - Jalon 2\[ | 
+| \[8-14\[  | \[Jalon 2 - Jalon 3\[ |
+| \[14-18\[ | \[Jalon 3 - Jalon 4\[ |
+| \[18-20\] | Jalon 4 + _Surprise_ |
 
 _Surprise_ : _Faites-vous et faites-nous rêver ! Ajoutez des fonctionnalités à vos programmes en plus des jalons 1+2+3+4._
 
