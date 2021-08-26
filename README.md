@@ -83,9 +83,7 @@ Voici la grille de notation à titre indicatif seulement. **Pour pouvoir préten
 | \[14-18\[ | Jalon 1 + 2 + 3 + \]0 - Jalon 4\[ |
 | \[18-20\] | Jalon 1 + 2 + 3 + 4 + _Surprise_ |
 
-_Surprise_ : _Faites-vous et faites-nous rêver ! Ajoutez des fonctionnalités à vos programmes en plus des jalonss 1+2+3+4._
-
-
+_Surprise_ : _Faites-vous et faites-nous rêver ! Ajoutez des fonctionnalités à vos programmes en plus des jalons 1+2+3+4._
 
 # Jalons 
 
