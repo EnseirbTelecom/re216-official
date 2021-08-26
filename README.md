@@ -3,14 +3,13 @@
 1. [Contexte](#contexte)
 2. [Soumission de code](#soumission-de-code)
 3. [Evaluation](#evaluation)
-4. [Notation](#notation)
-5. [Jalons](#jalons)
+4. [Jalons](#jalons)
 * [Jalon 1 - Client-serveur TCP et serveur multi-clients](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients)
 * [Jalon 2 - Gestion des utilisateurs](#jalon-2-\--gestion-des-utilisateurs)
 * [Jalon 3 - Gestion des salons de discussion](#jalon-3-\--Gestion-des-salons-de-discussion)
 * [Jalon 4 - Gestion des transferts de fichiers](#jalon-4-\--gestion-des-transferts-de-fichiers)
-6. [Tips and Tricks](#tips-and-tricks)
-7. [Rappel de C](#rappel-de-c)
+5. [Tips and Tricks](#tips-and-tricks)
+6. [Rappel de C](#rappel-de-c)
 
 ### Contexte 
 
