@@ -214,7 +214,7 @@ Les champs **infos** doivent contenir les valeurs suivantes en fonction des cas 
 
 **Req2.0** : Les messages échangés entre le client et le serveur doivent impérativement respecter la structure donnée dans le sujet. Dans ce sujet, la seule façon de transmettre un message de taille non-déterminée à l'avance est d'utiliser 2 messages : Un premier avec le champ **pld_len** qui indique la taille du second message, un second qui contient le contenu du second message de taille **pld_len**. Il faut donc commencer par envoyer un struct message et ensuite envoyer (et recevoir) le message de taille exactement **pld_len**.
 
-**Req2.1** : Une fois la connexion établie avec le serveur, le client doit s'identifier par son pseudo (avec la commande /nick, type NICKNAME_NEW). Le cas particulier où un utilisateur se connecte avec un pseudo trop long ou un pseudo avec des espaces et autres caractères spéciaux doivent être gérés.
+**Req2.1** : Une fois la connexion établie avec le serveur, le client doit s'identifier par son pseudo (avec la commande /nick, type NICKNAME_NEW). Le cas particulier où un utilisateur se connecte avec un pseudo trop long ou un pseudo avec des espaces et autres caractères spéciaux (autre que chiffres ou lettres de l'alphabet) doivent être gérés.
 ```
 Connecting to server ... done!
 [Server] : please login with /nick <your pseudo>
@@ -225,9 +225,9 @@ Connecting to server ... done!
 
 **Req2.3** : Le serveur doit gérer plusieurs utilisateurs et plusieurs connexions. Les utilisateurs (pseudo) et leurs infos liées à leur connexion (numéro de socket et structure d’adresse) doivent être stockés par le serveur dans une liste chaînée.
 
-**Req2.4** : Le serveur doit tenir compte du changement de pseudo d’un utilisateur.
+**Req2.4** : Le serveur doit tenir compte du changement de pseudo d’un utilisateur (réutilisation de la commande /nick).
 
-**Req2.5** : un client doit pouvoir obtenir du serveur la liste des utilisateurs connectés. (avec la commande /who, type NICKNAME_LIST)
+**Req2.5** : un client doit pouvoir obtenir du serveur la liste des utilisateurs connectés. (commande /who, type NICKNAME_LIST)
 
 ```
 /who
@@ -238,14 +238,14 @@ Connecting to server ... done!
 
 ```
 
-**Req2.6** : un client doit pouvoir obtenir du serveur des informations sur un utilisateur en particulier (avec la commande /whois, type NICKNAME_INFOS)
+**Req2.6** : un client doit pouvoir obtenir du serveur des informations sur un utilisateur en particulier (avec la commande /whois, type NICKNAME_INFOS). Les informations à donner sont, la date de connexion, l'adresse IP et le numéro de port utilisés par le client.
 
 ```
 /whois  User1
 [Server] : User1 connected since 2014/09/29@19:23 with IP address 192.168.3.165 and port number 52322
 ```
 
-**Req2.7** : Un utilisateur doit pouvoir envoyer un message à tous les autres utilisateurs (broadcast, commande /msgall, type BROADCAST_SEND).
+**Req2.7** : Un utilisateur doit pouvoir envoyer un message à tous les autres utilisateurs à la fois (commande /msgall <msg>, type BROADCAST_SEND).
 
 ```
 %terminal_user0>  /msgall Hello all
@@ -255,7 +255,7 @@ Connecting to server ... done!
 
 **Req2.8** : Un message envoyé ne doit pas être retransmis à l'expéditeur.
 
-**Req2.9** : Un utilisateur doit pouvoir envoyer un message privé à un autre utilisateur (unicast, commande /msg <pseudo> <msg>, type UNICAST_SEND).
+**Req2.9** : Un utilisateur doit pouvoir envoyer un message privé à un autre utilisateur (commande /msg <pseudo> <msg>, type UNICAST_SEND).
 
 ```
 %terminal_user0> /msg user1 Hello
