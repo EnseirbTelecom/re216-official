@@ -133,8 +133,8 @@ Les exigences/requirements pour ce premier jalon sont définis comme suit :
 
 ### Description
 
-L'objectif de ce jalon est de permettre au serveur de récupérer, stocker et utiliser des informations relatives aux utilisateurs du service de messagerie instantanée. Le serveur n'est plus, comme dans le jalon 1, qu'un serveur répétitif mais plutôt l'intermédiaire entre les utilisateurs pour l'envoi de messages. 
-Grâce à cela, les utilisateurs seront capable de choisir un pseudo, de voir les pseudos des autres utilisateurs connectés, de récupérer des informations sur ces utilisateurs, d’envoyer des messages privés à un utilisateur et d’envoyer des messages de broadcast à tous les utilisateurs.
+L'objectif de ce jalon est de permettre au serveur de récupérer, stocker et utiliser des informations relatives aux utilisateurs du service de messagerie instantanée. Le serveur n'est plus, comme dans le jalon 1, un serveur répétitif mais plutôt l'intermédiaire entre les utilisateurs pour l'envoi de messages. 
+Grâce à cela, les utilisateurs seront capable de choisir un pseudo, de voir les pseudos des autres utilisateurs connectés, de récupérer des informations sur ces utilisateurs, d’envoyer des messages privés à un utilisateur et d’envoyer des messages à tous les utilisateurs connectés.
 Pour faire cela, les utilisateurs devront taper des commandes avant leur message (/nick, /who, /whois <pseudo>, /msgall <msg>, /msg <pseudo> <msg>) qui seront interprétées par le client et le serveur.
 
 À partir de ce jalon, il vous est demandé de ne plus envoyer de simple chaînes de caractères mais d’utiliser la structure suivante pour vos messages : 
@@ -277,8 +277,8 @@ Connecting to server ... done!
 
 ### Description
 
-Ce jalon a pour objectif la réalisation des messages entre les utilisateurs afin que votre application devienne une application de messagerie instantanée à part entière. Jusqu'à présent, le serveur ne permettait que d’envoyer des messages privés en unicast et des messages en broadcast. On introduit ici l'utilisation de la notion de multicast applicatif.
-Pour le multicast applicatif, un utilisateur peut créer un salon. Les utilisateurs ont alors la possibilité de rejoindre ce salon, et une fois inscrits les utilisateurs du salon peuvent s'échanger des messages entre eux. Les utilisateurs peuvent quitter le salon ou changer de salon quand ils le souhaitent.
+Ce jalon a pour objectif la réalisation des messages entre les utilisateurs afin que votre application devienne une application de messagerie instantanée à part entière. Jusqu'à présent, le serveur ne permettait que d’envoyer des messages privés et des messages en à tout le monde. Dorénavant, vos utilisateurs pourront interagir avec des salons de discussion.
+Dans ce contexte, un utilisateur peut créer un salon. Les utilisateurs ont alors la possibilité de rejoindre ce salon, et une fois inscrits les utilisateurs du salon peuvent s'échanger des messages entre eux. Les utilisateurs peuvent quitter le salon ou changer de salon quand ils le souhaitent.
 
 Dans ce jalon, il faut utiliser les types : MULTICAST_CREATE, MULTICAST_LIST, MULTICAST_JOIN, MULTICAST_SEND et MULTICAST_QUIT.
 
@@ -291,36 +291,39 @@ Les champs **infos** doivent contenir les valeurs suivantes en fonction des cas 
 
 ### Exigences
 
-**Req3.1** : Un utilisateur doit pouvoir créer un salon (commande /create, type MULTICAST_CREATE). Les cas particulier où un utilisateur déclare un salon avec des espaces ou des caractères spéciaux doivent être gérés.
+**Req3.1** : Un utilisateur doit pouvoir créer un salon (commande /create, type MULTICAST_CREATE). Les cas particuliers où un utilisateur déclare un salon avec des espaces ou des caractères spéciaux (i.e. autre que les lettres de l'alphabet et des chiffres) doivent être gérés.
 
-**Req3.2** : Un utilisateur doit pouvoir rejoindre automatiquement le salon qu’il vient de créer.
+**Req3.2** : L'utilisateur doit rejoindre automatiquement le salon qu’il vient de créer, en quittant le salon dans lequel il se trouvait le cas échéant.
 
-**Req3.3** : Un utilisateur doit pouvoir demander la liste des salons (commande /channel_list, type MULTICAST_LIST).
+**Req3.3** : L'utilisateur doit pouvoir demander la liste des salons (commande /channel_list, type MULTICAST_LIST).
 
 **Req3.4** : Le serveur doit retourner un message d'erreur à l'utilisateur qui demande la création d'un salon déjà existant.
 
-**Req3.5** : Un utilisateur doit pouvoir rejoindre et quitter un salon(commandes /join et /quit, type MULTICAST_JOIN et MULTICAST_QUIT).
+**Req3.5** : L'utilisateur doit pouvoir rejoindre et quitter un salon (commandes /join et /quit, type MULTICAST_JOIN et MULTICAST_QUIT).
 
-**Req3.6** : Un utilisateur inscrit à un salon doit pouvoir changer de salon, ce qui lui fait quitter le salon en cours.
+**Req3.6** : L'utilisateur inscrit à un salon doit pouvoir changer de salon, ce qui lui fait quitter le salon en cours.
 
-**Req3.7** : Le serveur doit détruire le salon lorsque son dernier occupant le quitte.
+**Req3.7** : Le serveur doit détruire le salon lorsque son dernier occupant le quitte et doit notifier le dernier utilisateurs de la destruction du salon en même temps.
 
 **Req3.8** : Un message envoyé dans un salon ne doit pas être transmis à d'autres utilisateurs que ceux présents dans le salon (multicast, type MULTICAST_SEND).
 
-Exemple de fonctionnement des salons : 
+**Req3.9** : Les utilisateurs qui composent un salon doivent être notifié de chaque départ/arrivé d'utilisateurs dans le salon dans lequel ils se trouvent. 
 
+Exemple de fonctionnement des salons : 
 
 ```
 %terminal_user0> /create channel_name
 %terminal_user0> You have created channel channel_name
 %terminal_user0[channel_name]> You have joined channel_name
                     %terminal_user1> /join channel_name
-                    %terminal_user1[channel_name]> You have joined channel_name
+                    %terminal_user1[channel_name]> INFO> You have joined channel_name
+%terminal_user0[channel_name]> INFO> user1 has joined channel_name
 %terminal_user0[channel_name]>  I'm downtown
                     %terminal_user1[channel_name]> user0> : I'm downtown
 %terminal_user0[channel_name] > /quit channel_name
+					%terminal_user1[channel_name] INFO> user0 has quit channel_name
                     %terminal_user1[channel_name] > /quit channel_name
-%terminal_user0> Channel name has been destroyed
+					%terminal_user0> INFO> You were the last user in this channel, channel_name has been destroyed
 
 ```
 
@@ -332,7 +335,7 @@ Exemple de fonctionnement des salons :
 
 ### Description
 
-L'objectif de ce jalon est de permettre à un utilisateur d'envoyer un fichier à un autre utilisateur. Plusieurs schémas sont possibles pour implémenter cette fonctionnalité. Nous retiendrons le mode P2P (Peer to Peer) ne nécessitant pas de passer le serveur pour échanger des données. Le serveur n'est utilisé que pour mettre en relation les utilisateurs.
+L'objectif de ce jalon est de permettre à un utilisateur d'envoyer un fichier à un autre utilisateur. Plusieurs schémas sont possibles pour implémenter cette fonctionnalité. Nous retiendrons le mode P2P (pair à pair) ne nécessitant pas de passer le serveur pour échanger des données. Le serveur n'est utilisé que pour mettre en relation les utilisateurs.
 
 Les différentes étapes d’un échange de fichiers sont les suivantes : 
 - L’émetteur envoie une demande d’envoi de fichier au serveur, en précisant le nom du récepteur et le nom du fichier (commande /send, type FILE_REQUEST).
