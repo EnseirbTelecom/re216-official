@@ -212,7 +212,7 @@ Les champs **infos** doivent contenir les valeurs suivantes en fonction des cas 
 
 ### Exigences
 
-**Req2.0** : Les messages échangés entre le client et le serveur doivent impérativement respecter la structure donnée dans le sujet. La seul façon de transmettre un message de taille non-déterminée à l'avance est d'utiliser 2 messages : Un premier avec le champ **pld_len** qui indique la taille du second message, un second qui contient le contenu du mssecond message de taille **pld_len**.
+**Req2.0** : Les messages échangés entre le client et le serveur doivent impérativement respecter la structure donnée dans le sujet. Dans ce sujet, la seule façon de transmettre un message de taille non-déterminée à l'avance est d'utiliser 2 messages : Un premier avec le champ **pld_len** qui indique la taille du second message, un second qui contient le contenu du second message de taille **pld_len**. Il faut donc commencer par envoyer un struct message et ensuite envoyer (et recevoir) le message de taille exactement **pld_len**.
 
 **Req2.1** : Une fois la connexion établie avec le serveur, le client doit s'identifier par son pseudo (avec la commande /nick, type NICKNAME_NEW). Le cas particulier où un utilisateur se connectent avec un pseudo trop long ou un pseudo avec des espaces et autres caractères spéciaux doivent être gérés.
 ```
