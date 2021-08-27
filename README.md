@@ -223,9 +223,9 @@ Connecting to server ... done!
 ```
 **Req2.2** : Un utilisateur doit recevoir une erreur si le pseudo qu’il désire est déjà attribué.
 
-**Req2.3** : Le serveur doit gérer plusieurs utilisateurs et plusieurs connexions. Les utilisateurs (pseudo) et leurs infos liées à leur connexion (numéro de socket et structure d’adresse) doivent être stockés par le serveur dans une liste chaînée.
+**Req2.3** : Le serveur doit gérer plusieurs utilisateurs et plusieurs connexions. Les utilisateurs (pseudo) et les informations liées à leur connexion (numéro de socket et structure d’adresse) doivent être stockés par le serveur dans une liste chaînée.
 
-**Req2.4** : Le serveur doit tenir compte du changement de pseudo d’un utilisateur (réutilisation de la commande /nick).
+**Req2.4** : Le serveur doit tenir compte du changement de pseudo d’un utilisateur (réutilisation de la commande /nick <pseudo>).
 
 **Req2.5** : un client doit pouvoir obtenir du serveur la liste des utilisateurs connectés. (commande /who, type NICKNAME_LIST)
 
@@ -268,8 +268,7 @@ Connecting to server ... done!
                     %terminal_user1 > [Server] : user userKJHDQ does not exist
 ```
 
-	
-**Req2.11** : Le serveur doit considerer sa fonction “echo” (i.e. renvoyer le message à l’utilisateur) si aucune commande n’est tapée avant le message (echo, type ECHO_SEND).
+**Req2.11** : Le serveur doit considerer sa fonction “echo” (i.e. renvoyer le message à l’utilisateur) si aucune commande n’est tapée avant le message (type ECHO_SEND).
 
 
 ## Jalon 3 - Gestion des salons de discussion
@@ -291,7 +290,7 @@ Les champs **infos** doivent contenir les valeurs suivantes en fonction des cas 
 
 ### Exigences
 
-**Req3.1** : Un utilisateur doit pouvoir créer un salon (commande /create, type MULTICAST_CREATE). Les cas particuliers où un utilisateur déclare un salon avec des espaces ou des caractères spéciaux (i.e. autre que les lettres de l'alphabet et des chiffres) doivent être gérés.
+**Req3.1** : Un utilisateur doit pouvoir créer un salon (commande /create <channel_name>, type MULTICAST_CREATE). Les cas particuliers où un utilisateur déclare un salon avec des espaces ou des caractères spéciaux (i.e. autre que les lettres de l'alphabet et des chiffres) doivent être gérés.
 
 **Req3.2** : L'utilisateur doit rejoindre automatiquement le salon qu’il vient de créer, en quittant le salon dans lequel il se trouvait le cas échéant.
 
@@ -305,7 +304,7 @@ Les champs **infos** doivent contenir les valeurs suivantes en fonction des cas 
 
 **Req3.7** : Le serveur doit détruire le salon lorsque son dernier occupant le quitte et doit notifier le dernier utilisateurs de la destruction du salon en même temps.
 
-**Req3.8** : Un message envoyé dans un salon ne doit pas être transmis à d'autres utilisateurs que ceux présents dans le salon (multicast, type MULTICAST_SEND).
+**Req3.8** : L'utilisateur envoie des messages dans le salon dans lequel il se trouve en tapant directement une chaine de caractère. Un message envoyé dans un salon ne doit pas être transmis à d'autres utilisateurs que ceux présents dans le salon (multicast, type MULTICAST_SEND).
 
 **Req3.9** : Les utilisateurs qui composent un salon doivent être notifié de chaque départ/arrivé d'utilisateurs dans le salon dans lequel ils se trouvent. 
 
