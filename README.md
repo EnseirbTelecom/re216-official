@@ -14,7 +14,6 @@
 3. [Tips and Tricks](#tips-and-tricks)
 4. [Rappel de C](#rappel-de-c)
 
-# Contexte 
 
 Ce projet consiste en la réalisation d'un grand classique de la programmation réseau, un cas pratique de discussion instantanée de type client/serveur. A titre d'exemple, vous pouvez jeter un coup d'œil au protocole IRC (Internet Relay Chat) défini originellement par la RFC1459.
 
