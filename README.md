@@ -1,15 +1,18 @@
 # RE216 - Projet de programmation réseau
 
 1. [Contexte](#contexte)
-2. [Soumission de code](#soumission-de-code)
-3. [Evaluation](#evaluation)
-4. [Jalons](#jalons)
+* [Déroulement global](#déroulement-global)
+* [Contenu du depot git](#contenu-du-depot-git)
+* [Soumission des jalons](#soumission-des-jalons)
+* [Soumission finale](#soumission-finale)
+* [Evaluation](#evaluation)
+2. [Jalons](#jalons)
 * [Jalon 1 - Client-serveur TCP et serveur multi-clients](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients)
 * [Jalon 2 - Les utilisateurs](#jalon-2-\--Les-utilisateurs)
 * [Jalon 3 - Les salons de discussion](#jalon-3-\--Les-salons-de-discussion)
 * [Jalon 4 - Les transferts de fichiers](#jalon-4-\--Les-transferts-de-fichiers)
-5. [Tips and Tricks](#tips-and-tricks)
-6. [Rappel de C](#rappel-de-c)
+3. [Tips and Tricks](#tips-and-tricks)
+4. [Rappel de C](#rappel-de-c)
 
 ### Contexte 
 
