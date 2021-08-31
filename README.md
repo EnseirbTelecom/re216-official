@@ -5,9 +5,9 @@
 3. [Evaluation](#evaluation)
 4. [Jalons](#jalons)
 * [Jalon 1 - Client-serveur TCP et serveur multi-clients](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients)
-* [Jalon 2 - Gestion des utilisateurs](#jalon-2-\--gestion-des-utilisateurs)
-* [Jalon 3 - Gestion des salons de discussion](#jalon-3-\--Gestion-des-salons-de-discussion)
-* [Jalon 4 - Gestion des transferts de fichiers](#jalon-4-\--gestion-des-transferts-de-fichiers)
+* [Jalon 2 - Les utilisateurs](#jalon-2-\--gestion-des-utilisateurs)
+* [Jalon 3 - Les salons de discussion](#jalon-3-\--Gestion-des-salons-de-discussion)
+* [Jalon 4 - Les transferts de fichiers](#jalon-4-\--gestion-des-transferts-de-fichiers)
 5. [Tips and Tricks](#tips-and-tricks)
 6. [Rappel de C](#rappel-de-c)
 
@@ -128,7 +128,7 @@ Les exigences/requirements pour ce premier jalon sont définis comme suit :
 **Req1.8** : Le serveur doit stocker les informations des clients (descripteur de fichiers et adresse/port remplis par la fonction **accept()**) dans une liste chaînée.
 
 
-## Jalon 2 - Gestion des utilisateurs 
+## Jalon 2 - Les utilisateurs 
 [Top](#re216-\--projet-de-programmation-réseau)
 
 ### Description
@@ -271,7 +271,7 @@ Connecting to server ... done!
 **Req2.11** : Le serveur doit considerer sa fonction “echo” (i.e. renvoyer le message à l’utilisateur) si aucune commande n’est tapée avant le message (type ECHO_SEND).
 
 
-## Jalon 3 - Gestion des salons de discussion
+## Jalon 3 - Les salons de discussion
 [Top](#re216-\--projet-de-programmation-réseau)
 
 ### Description
@@ -329,7 +329,7 @@ Exemple de fonctionnement des salons :
 
 
 
-## Jalon 4 - Gestion des transferts de fichiers
+## Jalon 4 - Les transferts de fichiers
 [Top](#re216-\--projet-de-programmation-réseau)
 
 ### Description
