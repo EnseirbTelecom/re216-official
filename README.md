@@ -32,6 +32,7 @@ La durée de réalisation ce projet est de l'ordre de 21h20 dont 10h40 pendant l
 ### Contenu du depot git
 
 Lorsque vous récupérez ce dépot git, il comprend les dossiers _./sample-jalon1_ et _./sample-jalon2_ qui contiennent des squelettes de codes pour les jalons 1 et 2 ainsi qu'un Makefile. Vous avez également le support du cours ainsi que les dossiers vides _./jalon1, ./jalon2, ./jalon3, ./jalon4_ destinés à accueillir le code de chaque jalon. 
+Enfin, le dépot contient **le fichier info.txt qu'il faut remplir correctement** avec votre nom, prénom et login github.
 
 ### Soumission des jalons
 
