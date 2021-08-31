@@ -5,7 +5,7 @@
 * [Contenu du depot git](#contenu-du-depot-git)
 * [Soumission des jalons](#soumission-des-jalons)
 * [Soumission finale](#soumission-finale)
-* [Evaluation et consignes importantes](#evaluation-et-consignes-importantes)
+* [Evaluation](#evaluation)
 2. [Jalons](#jalons)
 * [Jalon 1 - Client-serveur TCP et serveur multi-clients](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients)
 * [Jalon 2 - Les utilisateurs](#jalon-2-\--Les-utilisateurs)
@@ -57,7 +57,7 @@ Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt 
 - `ongoingy`avec `y` dans {0,1,2,3,4} indiquant le jalon en cours s'il y en a un.
 
 
-### Evaluation et consignes importantes
+### Evaluation
 
 L'évaluation de votre travail se fera en fonction des critères suivants:
 
@@ -71,9 +71,10 @@ L'évaluation du projet suivra la grille de notation suivante et prendra en comp
 - Tout fonctionne en IPv6 et IPV4 : +0.25 point;
 - Non respect du rendu des jalons aux deadlines indiquées : -2 points;
 - Mémoire non libérée : -2 points;
-- Mauvaise reception des données lors d'operation de type read/write sur les sockets : -2 points
-- Non utilisation de fonction pour rendre le code clair (i.e., si votre main() fait plus de 200 lignes) : -2 points
+- Mauvaise reception des données lors d'operation de type read/write sur les sockets : -2 points;
+- Non utilisation de fonction pour rendre le code clair (i.e., si votre main() fait plus de 200 lignes) : -2 points;
 - File descriptors des sockets et des fichiers non fermés : -2 points;
+- Fichier info.txt non/mal rempli : - 2 points.
 
 Voici la grille de notation à titre indicatif seulement. **Pour pouvoir obtenir les points d'un jalon précis, toutes les fonctionnalités et spécificités des jalons précédents doivent être implémentées sans erreurs**
 
