@@ -1,6 +1,6 @@
 # RE216 - Projet de programmation réseau
 
-1. [Contexte](#Projet-de-programmation-reseau)
+1. [RE216 - Projet de programmation réseau](#Projet-de-programmation-reseau)
 * [Déroulement global](#déroulement-global)
 * [Contenu du depot git](#contenu-du-depot-git)
 * [Soumission des jalons](#soumission-des-jalons)
