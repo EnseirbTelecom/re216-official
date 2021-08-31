@@ -5,9 +5,9 @@
 3. [Evaluation](#evaluation)
 4. [Jalons](#jalons)
 * [Jalon 1 - Client-serveur TCP et serveur multi-clients](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients)
-* [Jalon 2 - Les utilisateurs](#jalon-2-\--gestion-des-utilisateurs)
-* [Jalon 3 - Les salons de discussion](#jalon-3-\--Gestion-des-salons-de-discussion)
-* [Jalon 4 - Les transferts de fichiers](#jalon-4-\--gestion-des-transferts-de-fichiers)
+* [Jalon 2 - Les utilisateurs](#jalon-2-\--Les-utilisateurs)
+* [Jalon 3 - Les salons de discussion](#jalon-3-\--Les-salons-de-discussion)
+* [Jalon 4 - Les transferts de fichiers](#jalon-4-\--Les-transferts-de-fichiers)
 5. [Tips and Tricks](#tips-and-tricks)
 6. [Rappel de C](#rappel-de-c)
 
