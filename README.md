@@ -5,7 +5,7 @@
 * [Contenu du depot git](#contenu-du-depot-git)
 * [Soumission des jalons](#soumission-des-jalons)
 * [Soumission finale](#soumission-finale)
-* [Evaluation](#evaluation)
+* [Evaluation et consignes importantes](#evaluation-et-consignes-importantes)
 2. [Jalons](#jalons)
 * [Jalon 1 - Client-serveur TCP et serveur multi-clients](#jalon-1-\--client\-serveur-tcp-et-serveur-multi\-clients)
 * [Jalon 2 - Les utilisateurs](#jalon-2-\--Les-utilisateurs)
@@ -57,7 +57,7 @@ Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt 
 - `ongoingy`avec `y` dans {0,1,2,3,4} indiquant le jalon en cours s'il y en a un.
 
 
-### Evaluation 
+### Evaluation et consignes importantes
 
 L'évaluation de votre travail se fera en fonction des critères suivants:
 
