@@ -77,6 +77,7 @@ L'évaluation du projet suivra la grille de notation suivante et prendra en comp
 - Mauvaise reception des données lors d'operation de type read/write sur les sockets : -2 points;
 - Non utilisation de fonction pour rendre le code clair (i.e., si votre main() fait plus de 200 lignes) : -2 points;
 - File descriptors des sockets et des fichiers non fermés : -2 points;
+- Mauvaise utilisation des primitives de lecture et d'écriture pour les sockets : -2 points;
 - Fichiers info.txt et rendu.txt non/mal remplis : - 2 points.
 
 Voici la grille de notation à titre indicatif seulement. **Pour pouvoir obtenir les points d'un jalon précis, toutes les fonctionnalités et spécificités des jalons précédents doivent être implémentées sans erreurs**
