@@ -110,9 +110,9 @@ Le client doit pouvoir gérer en même temps les messages provenant du serveur e
 
 Les exigences/requirements pour ce premier jalon sont définis comme suit :
 
-**Req1.1** : Création d'un client qui se connecte en TCP à un serveur renseigné par un port et une adresse IPv4 qui sont passés comme arguments du programme comme suit :
+**Req1.1** : Création d'un client qui se connecte en TCP à un serveur renseigné par un port et un nom de domaine passés comme arguments du programme comme suit :
 ```
-./client <server_ip_adresse> <server_port>
+./client <server_name> <server_port>
 ```
 
 **Req1.2** : Création d'un server avec une socket d'écoute qui accepte la connexion et gère les données entrantes. Le port du serveur doit être passé comme argument du programme.
