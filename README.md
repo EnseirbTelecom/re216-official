@@ -80,7 +80,7 @@ L'évaluation du projet suivra la grille de notation suivante et prendra en comp
 
 Voici la grille de notation à titre indicatif seulement. **Pour pouvoir obtenir les points d'un jalon précis, toutes les fonctionnalités et spécificités des jalons précédents doivent être implémentées sans erreurs.**
 
-| Note | Réalisation non buggée des requirements du(es) jalon(s) |
+| Note | Réalisation correcte des requirements du(es) jalon(s) |
 | ------ | ------ |
 | \[0-4\[ | \[0 - Jalon 1\[ |
 | \[4-8\[ | \[Jalon 1 - Jalon 2\[ | 
