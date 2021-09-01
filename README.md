@@ -55,7 +55,7 @@ Cette soumission prendra la forme d'un dernière release nommée `rendu_final` d
 
 Pour développer et tester votre code sur les machines de l'enseirb, vous pouvez vous connecter à la machine ssh (i.e., ssh.enseirb.fr) de l'enseirb et ensuite vous connecter à une des machines de TPs de l'enseirb. Pour connaitre les machines disponibles, vous pouvez utiliser la commande `netgroup [numéro_de_salle]` par exemple _netgroup I101_.
 
-Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt à la racine de votre reposority qui contient les chaines de caractères :
+Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt à la racine de votre dépot qui contient les chaines de caractères :
 - `jalonx` avec `x` dans {0,1,2,3,4} indiquant le dernier jalon atteint dans son intégralité
 - `ongoingy`avec `y` dans {0,1,2,3,4} indiquant le jalon en cours s'il y en a un.
 
