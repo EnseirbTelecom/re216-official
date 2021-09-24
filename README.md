@@ -36,7 +36,7 @@ Enfin, le dépot contient **le fichier info.txt qu'il faut remplir correctement*
 
 ### Pusher son code sur le dépot git de GitHub
 
-Pour pouvoir réaliser cette opéraation, vous allez devoir vous créer un Personal Access Token en suivant le tutorial suivant : https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+Pour pouvoir réaliser cette opéraation, vous allez devoir vous créer un Personal Access Token en suivant [ce  tutorial](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
 A la suite de ce tutoriel, vous obtenez un token sous la forme d'une chaine de caractère à fournir à la place de votre mot de passe lorsque vous essayer de `git push`votre code. 
 
