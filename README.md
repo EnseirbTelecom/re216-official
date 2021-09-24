@@ -34,6 +34,12 @@ La durée de réalisation ce projet est de l'ordre de 21h20 dont 10h40 pendant l
 Lorsque vous récupérez ce dépot git, il comprend les dossiers _./sample-jalon1_ et _./sample-jalon2_ qui contiennent des squelettes de codes pour les jalons 1 et 2 ainsi qu'un Makefile. Vous avez également le support du cours, les dossiers vides _./jalon1, ./jalon2, ./jalon3, ./jalon4_ destinés à accueillir le code de chaque jalon, et le fichier _rendu.txt_ à remplir pour la soumission finale du projet.
 Enfin, le dépot contient **le fichier info.txt qu'il faut remplir correctement** avec votre nom, prénom et login github.
 
+### Pusher son code sur le dépot git de GitHub
+
+Pour pouvoir réaliser cette opéraation, vous allez devoir vous créer un Personal Access Token en suivant le tutorial suivant : https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+A la suite de ce tutoriel, vous obtenez un token sous la forme d'une chaine de caractère à fournir à la place de votre mot de passe lorsque vous essayer de `git push`votre code. 
+
 ### Soumission des jalons
 
 La soumission des jalons se fait sur GitHub en créant une release de votre code. Avant chaque release, **assurez vous d'avoir bien mis le code du jalon courrant dans le repertoire qui convient** (i.e., _./jalon1_ pour le code du jalon 1, etc.).
@@ -217,7 +223,7 @@ Les champs **infos** doivent contenir les valeurs suivantes en fonction des cas 
 
 ### Exigences
 
-**Req2.0** : Les messages échangés entre le client et le serveur doivent impérativement respecter la structure donnée dans le sujet. Dans ce sujet, la seule façon de transmettre un message de taille non-déterminée à l'avance est d'utiliser 2 messages : Un premier avec le champ **pld_len** qui indique la taille du second message, un second qui contient le contenu du second message de taille **pld_len**. Il faut donc commencer par envoyer un struct message et ensuite envoyer (et recevoir) le message de taille exactement **pld_len**.
+**Req2.0** : Les messages échangés entre le client et le serveur doivent impérativement respecter la structure donnée dans le sujet. Dans ce sujet, la seule façon de transmettre un message de taille non-déterminée à l'avance est d'utiliser 2 messages : Un premier contenant les octets de la _struct message_ avec le champ **pld_len** qui indique la taille du second message, un second message de taille **pld_len** contenant les octets utiles.
 
 **Req2.1** : Une fois la connexion établie avec le serveur, le client doit s'identifier par son pseudo (avec la commande /nick <pseudo>, type NICKNAME_NEW). Le cas particulier où un utilisateur se connecte avec un pseudo trop long ou un pseudo avec des espaces et autres caractères spéciaux (autre que chiffres ou lettres de l'alphabet) doivent être gérés.
 ```

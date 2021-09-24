@@ -1,6 +1,6 @@
 CFLAGS=-Wall
 #LDFLAGS=-lpthread
-all: client server
+all: client_corr server_corr
 clean:
-	rm -f client server
+	rm -f client_corr server_corr
 
