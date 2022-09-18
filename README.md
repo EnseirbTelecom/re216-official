@@ -55,12 +55,14 @@ En ce qui concerne les deadlines de rendu des jalons:
 - Jalon 1 : 25 septembre 23h59
 - Jalon 2 : 02 octobre 23h59
 - Jalon 3 : 09 octobre 23h59
-- Jalon 4 et rendu final : 19 octobre 23h59
+- Jalon 4/rendu final + rapport de projet : 19 octobre 23h59
 
 ### Soumission finale
 Cette soumission prendra la forme d'un dernière release nommée `rendu_final` de votre code qui devra **impérativement compiler à l'aide d'un makefile, sans erreurs et sans warning, sur les machines de l'enseirb**. Si vous le souhaitez, vous pouvez repartir des makefiles proposés dans les dossiers _sample-jalon1_ et _sample-jalon2_.
 
 Pour développer et tester votre code sur les machines de l'enseirb, vous pouvez vous connecter à la machine ssh (i.e., ssh.enseirb.fr) de l'enseirb et ensuite vous connecter à une des machines de TPs de l'enseirb. Pour connaitre les machines disponibles, vous pouvez utiliser la commande `netgroup [numéro_de_salle]` par exemple _netgroup I101_.
+
+Votre rendu finale devra etre accompagner d'un rapport structuré de 3 pages expliquant votre travail, l'architecture du code, l'implementation des communications réseaux, les difficutés rencontrés, ainsi que tout autre élément permettant de comprendre votre contribution.
 
 Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt à la racine de votre dépot qui contient les chaines de caractères :
 - `jalonx` avec `x` dans {0,1,2,3,4} indiquant le dernier jalon atteint dans son intégralité
