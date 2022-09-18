@@ -51,10 +51,11 @@ Chaque soumission sera analysée par un detecteur de plagiat.
 
 En ce qui concerne les deadlines de rendu des jalons:
 
-- Jalon 1 : 01 octobre 23h59
-- Jalon 2 : 08 octobre 23h59
-- Jalon 3 : 19 octobre 23h59
-- Jalon 4 et rendu final : 24 octobre 23h59
+
+- Jalon 1 : 25 septembre 23h59
+- Jalon 2 : 02 octobre 23h59
+- Jalon 3 : 09 octobre 23h59
+- Jalon 4 et rendu final : 19 octobre 23h59
 
 ### Soumission finale
 Cette soumission prendra la forme d'un dernière release nommée `rendu_final` de votre code qui devra **impérativement compiler à l'aide d'un makefile, sans erreurs et sans warning, sur les machines de l'enseirb**. Si vous le souhaitez, vous pouvez repartir des makefiles proposés dans les dossiers _sample-jalon1_ et _sample-jalon2_.
