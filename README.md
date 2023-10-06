@@ -137,7 +137,7 @@ Les exigences/requirements pour ce premier jalon sont définis comme suit :
 
 **Req1.4** : Le client doit pouvoir prendre une chaîne de caractère tapée au clavier, l'envoyer au serveur et recevoir de ce dernier la même chaîne de caractère.
 
-**Req1.5** : Le client doit pouvoir gérer les chaînes de caractère tapées au clavier et les messages provenant du serveur en même temps.
+**Req1.5** : Le client doit pouvoir gérer les chaînes de caractère tapées au clavier et les messages provenant du serveur en même temps (à l'aide de _poll()_ coté client).
 
 **Req1.6** : Le serveur, en recevant une chaîne de caractère depuis un client, doit répéter cette chaîne uniquement à ce même client.
 
@@ -374,15 +374,15 @@ Les champs **infos** doivent contenir les valeurs suivantes en fonction des cas 
 - Pour **FILE_ACK**, le champ **infos** contient le nom du fichier qui a été correctement reçu par le récepteur.
 
 ### Exigences
-**Req 5.1** : Un utilisateur (l'émetteur) doit pouvoir envoyer un fichier à un autre utilisateur (le récepteur).
+**Req 4.1** : Un utilisateur (l'émetteur) doit pouvoir envoyer un fichier à un autre utilisateur (le récepteur).
 
-**Req 5.2** : Lors du transfert d'un fichier, le récepteur doit donner son approbation.
+**Req 4.2** : Lors du transfert d'un fichier, le récepteur doit donner son approbation.
 
-**Req 5.3** : Si le récepteur accepte l’échange de fichier, l’émetteur soit pouvoir se connecter directement au récepteur le temps de lui envoyer le fichier.
+**Req 4.3** : Si le récepteur accepte l’échange de fichier, l’émetteur soit pouvoir se connecter directement au récepteur le temps de lui envoyer le fichier.
 
-**Req 5.4** : Si le récepteur refuse l’échange de fichier, l’émetteur doit en être informé.
+**Req 4.4** : Si le récepteur refuse l’échange de fichier, l’émetteur doit en être informé.
 
-**Req 5.5** : Lors du transfert d'un fichier, le récepteur et l'émetteur doivent avoir confirmation que l'envoi s'est déroulé correctement.
+**Req 4.5** : Lors du transfert d'un fichier, le récepteur et l'émetteur doivent avoir confirmation que l'envoi s'est déroulé correctement.
 
 Exemple de fonctionnement : 
 
