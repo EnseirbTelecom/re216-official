@@ -84,7 +84,7 @@ L'évaluation de votre travail se fera en fonction des critères suivants:
 
 L'évaluation du projet suivra la grille de notation suivante et prendra en compte des points bonus/malus.
 
-- Non respect des consignes (rendu des jalons aux deadlines indiquées, fichiers info.txt et rendu.txt mal remplis, Makefile manquant/incorrect, compilation avec erreurs/warning importants) : -2 points;
+- Non respect des consignes (rendu des jalons aux deadlines indiquées, fichiers info.txt mal remplis, Makefile manquant/incorrect, compilation avec erreurs/warning importants) : -2 points;
 - Mauvaise utilisation des primitives de lecture et d'écriture pour les sockets : -2 points;
 - Faible qualité et lisibilité de code (indentation, main() court -<200 lignes-, factorisation du code, utilisation de fonctions) : -2 points;
 - Mémoire allouée et non libérée : -2 points;
