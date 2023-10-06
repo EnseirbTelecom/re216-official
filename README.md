@@ -34,8 +34,12 @@ La durée de réalisation ce projet ne devrait pas dépasser les 21h20 dont 10h4
 
 ### Contenu du depot git
 
-Lorsque vous récupérez ce dépot git, il comprend les dossiers _./sample-jalon1_ et _./sample-jalon2_ qui contiennent des squelettes de codes pour les jalons 1 et 2 ainsi qu'un Makefile. Vous avez également le support du cours, les dossiers vides _./jalon1, ./jalon2, ./jalon3, ./jalon4_ destinés à accueillir le code de chaque jalon, et le fichier _rendu.txt_ à remplir pour la soumission finale du projet.
-Enfin, le dépot contient **le fichier info.txt qu'il faut remplir correctement** avec votre nom, prénom et login github.
+Lorsque vous récupérez ce dépot git, il comprend les fichiers/dossiers:
+* _./sample-jalon1_ et _./sample-jalon2_ qui contiennent des squelettes de codes pour les jalons 1 et 2 ainsi qu'un Makefile. 
+* _.travail/_. qui est le dossier dans lequel vous allez coder, **c'est celui ce qui sera évalué pour vos soumissions de jalons**
+* _.rendu_final/_. qui est le dossier dans lequel vous allez mettre votre code en fin de projet
+* _.info.txt_. **que vous devez remplir avec vos noms + prénom + login github**
+* le support du cours
 
 ### Pusher son code sur le dépot git de GitHub
 
@@ -53,7 +57,7 @@ Pour faire correctement une release:
 * **publiez votre release** et de ne pas la garder en tant que draft uniquement. Elle sera ignorée dans le cas échéant.
 
 Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases). Le nom des releases sera `jalonx` avec `x` le numéro du jalon. 
-Chaque soumission sera analysée par un detecteur de plagiat. 
+Chaque soumission sera analysée par les detecteurs de plagiat que sont [JPLAG](https://github.com/jplag/JPlag) et [MOSS](https://theory.stanford.edu/~aiken/moss/).
 
 En ce qui concerne les deadlines de rendu des jalons:
 
