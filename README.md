@@ -36,9 +36,9 @@ La durée de réalisation ce projet ne devrait pas dépasser les 21h20 dont 10h4
 
 Lorsque vous récupérez ce dépot git, il comprend les fichiers/dossiers:
 * _./sample-jalon1_ et _./sample-jalon2_ qui contiennent des squelettes de codes pour les jalons 1 et 2 ainsi qu'un Makefile. 
-* _.travail/_. qui est le dossier dans lequel vous allez coder, **c'est celui ce qui sera évalué pour vos soumissions de jalons**
-* _.rendu_final/_. qui est le dossier dans lequel vous allez mettre votre code en fin de projet
-* _.info.txt_. **que vous devez remplir avec vos noms + prénom + login github**
+* _travail/_ qui est le dossier dans lequel vous allez coder, **c'est celui ce qui sera évalué pour vos soumissions de jalons**
+* _rendu_final/_ qui est le dossier dans lequel vous allez mettre votre code en fin de projet
+* _info.txt_ **que vous devez remplir avec vos noms + prénom + login github**
 * le support du cours
 
 ### Pusher son code sur le dépot git de GitHub
@@ -67,15 +67,10 @@ En ce qui concerne les deadlines de rendu des jalons:
 - Jalon 4 et rendu final : 19 novembre 23h59
 
 ### Soumission finale
-Cette soumission prendra la forme d'un dernière release nommée `rendu_final` de votre code qui devra **impérativement compiler à l'aide d'un makefile, sans erreurs et sans warning, sur les machines de l'enseirb**. Si vous le souhaitez, vous pouvez repartir des makefiles proposés dans les dossiers _sample-jalon1_ et _sample-jalon2_.
+POur la osumission finale, copier votre code depuis le repertoire _travail/_ dans le repertoire _rendu_final/_ .
+Cette soumission devra **impérativement compiler à l'aide d'un makefile, sans erreurs et sans warning, sur les machines de l'enseirb**. Si vous le souhaitez, vous pouvez repartir des makefiles proposés dans les dossiers _sample-jalon1_ et _sample-jalon2_.
 
 Pour développer et tester votre code sur les machines de l'enseirb, vous pouvez vous connecter à la machine ssh (i.e., ssh.enseirb.fr) de l'enseirb et ensuite vous connecter à une des machines de TPs de l'enseirb. Pour connaitre les machines disponibles, vous pouvez utiliser la commande `netgroup [numéro_de_salle]` par exemple _netgroup I101_.
-
-Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt à la racine de votre dépot qui contient les chaines de caractères :
-- `jalonx` avec `x` dans {0,1,2,3,4} indiquant le dernier jalon atteint dans son intégralité
-- `ongoingy`avec `y` dans {0,1,2,3,4} indiquant le jalon en cours s'il y en a un.
-
-
 
 
 ### Evaluation
