@@ -1,4 +1,4 @@
-# RE216 - Projet de programmation réseau
+# RE216 - Projet de programmation réseau ---
 
 1. [RE216 - Projet de programmation réseau](#Projet-de-programmation-reseau)
 * [Déroulement global](#déroulement-global)
