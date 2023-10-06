@@ -24,9 +24,12 @@ L'objectif sous-jacent de ce projet est la manipulation de l'API socket POSIX en
 
 ### Déroulement global
 
-Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet. Le travail doit être réalisé en monome.
-Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et **chaque jalon doit être intégralement réalisé avant de passer au jalon suivant**. Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée.
-La durée de réalisation ce projet est de l'ordre de 21h20 dont 10h40 pendant les séances encadrées.
+Les enseignements intégrés que vous avez suivis vous ont donné les bases solides pour débuter ce projet. Le travail doit être réalisé en binome.
+Vous allez construire votre code petit à petit en suivant des jalons pré-définis, décrits ci-dessous. Un jalon correspond à une étape de réalisation, et:
+* **chaque jalon doit être intégralement réalisé avant de passer au jalon suivant**. 
+* **Une fois le jalon atteint, il faut le soumettre au travers de la procédure qui vous est donnée.**
+
+La durée de réalisation ce projet ne devrait pas dépasser les 21h20 dont 10h40 pendant les séances encadrées.
 
 
 ### Contenu du depot git
@@ -36,37 +39,39 @@ Enfin, le dépot contient **le fichier info.txt qu'il faut remplir correctement*
 
 ### Pusher son code sur le dépot git de GitHub
 
-Pour pouvoir réaliser cette opération, vous allez devoir vous créer un Personal Access Token en suivant [ce  tutorial](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) pour pusher avec HTTPS ou bien [ce tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh) pour pusher avec SSH.
+Pour pouvoir réaliser cette opération, vous allez devoir vous créer un Personal Access Token en suivant [ce  tutorial](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
-A la suite de ce tutoriel, vous obtenez soitun token sous la forme d'une chaine de caractère à fournir à la place de votre mot de passe lorsque vous essayer de `git push`votre code, soit un couple de clés publique/privée ssh pour réaliser cette meme opération.
+A la suite de ce tutoriel, vous obtenez un token sous la forme d'une chaine de caractère à fournir à la place de votre mot de passe lorsque vous essayer de `git push`votre code. 
 
 ### Soumission des jalons
 
-La soumission des jalons se fait sur GitHub en créant une release de votre code. Avant chaque release, **assurez vous d'avoir bien mis le code du jalon courrant dans le repertoire qui convient** (i.e., _./jalon1_ pour le code du jalon 1, etc.).
-Une release de code est une capture de l'état de vos fichiers disponibles sur votre dépot github à un instant _t_. _Inutile de mettre des fichiers attachés à la release_, l'équipe enseignante les ignorera dans l'évaluation.
+La soumission des jalons se fait sur GitHub en créant une release de votre code. Une release de code est une capture de l'état de vos fichiers disponibles sur votre dépot github à un instant _t_.
 
-N'oubliez pas de **publiez votre release** et de ne pas la garder en tant que draft uniquement. Elle sera ignorée dans le cas échéant.
+Pour faire correctement une release:
+* **assurez vous d'avoir bien mis le code du jalon courrant dans le repertoire qui convient** (i.e., _./jalon1_ pour le code du jalon 1, etc.).
+* **Ne pas mettre de fichiers attachés à la release**, l'équipe enseignante les ignorera dans l'évaluation.
+* **publiez votre release** et de ne pas la garder en tant que draft uniquement. Elle sera ignorée dans le cas échéant.
+
 Si vous ne savez pas comment faire une release de votre code sur GitHub, voici [la ressource officielle pour apprendre à le faire](https://help.github.com/en/articles/creating-releases). Le nom des releases sera `jalonx` avec `x` le numéro du jalon. 
 Chaque soumission sera analysée par un detecteur de plagiat. 
 
 En ce qui concerne les deadlines de rendu des jalons:
 
-
-- Jalon 1 : 25 septembre 23h59
-- Jalon 2 : 02 octobre 23h59
-- Jalon 3 : 09 octobre 23h59
-- Jalon 4/rendu final + rapport de projet : 19 octobre 23h59
+- Jalon 1 : 14 octobre 23h59
+- Jalon 2 : 21 octobre 23h59
+- Jalon 3 : 11 novembre 23h59
+- Jalon 4 et rendu final : 19 novembre 23h59
 
 ### Soumission finale
 Cette soumission prendra la forme d'un dernière release nommée `rendu_final` de votre code qui devra **impérativement compiler à l'aide d'un makefile, sans erreurs et sans warning, sur les machines de l'enseirb**. Si vous le souhaitez, vous pouvez repartir des makefiles proposés dans les dossiers _sample-jalon1_ et _sample-jalon2_.
 
 Pour développer et tester votre code sur les machines de l'enseirb, vous pouvez vous connecter à la machine ssh (i.e., ssh.enseirb.fr) de l'enseirb et ensuite vous connecter à une des machines de TPs de l'enseirb. Pour connaitre les machines disponibles, vous pouvez utiliser la commande `netgroup [numéro_de_salle]` par exemple _netgroup I101_.
 
-Votre rendu finale devra etre accompagner d'un rapport structuré de 3 pages expliquant votre travail, l'architecture du code, l'implementation des communications réseaux, les difficutés rencontrés, ainsi que tout autre élément permettant de comprendre votre contribution.
-
 Votre dernière release doit **obligatoirement** comporter un fichier rendu.txt à la racine de votre dépot qui contient les chaines de caractères :
 - `jalonx` avec `x` dans {0,1,2,3,4} indiquant le dernier jalon atteint dans son intégralité
 - `ongoingy`avec `y` dans {0,1,2,3,4} indiquant le jalon en cours s'il y en a un.
+
+
 
 
 ### Evaluation
