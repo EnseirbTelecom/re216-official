@@ -68,7 +68,7 @@ En ce qui concerne les deadlines de rendu des jalons:
 - Jalon 4 et rendu final : 19 novembre 23h59
 
 ### Soumission finale
-POur la osumission finale, copier votre code depuis le repertoire _travail/_ dans le repertoire _rendu_final/_ .
+Pour la soumisson finale, copier votre code depuis le repertoire _travail/_ dans le repertoire _rendu_final/_ .
 Cette soumission devra **impérativement compiler à l'aide d'un makefile, sans erreurs et sans warning, sur les machines de l'enseirb**. Si vous le souhaitez, vous pouvez repartir des makefiles proposés dans les dossiers _sample-jalon1_ et _sample-jalon2_.
 
 Pour développer et tester votre code sur les machines de l'enseirb, vous pouvez vous connecter à la machine ssh (i.e., ssh.enseirb.fr) de l'enseirb et ensuite vous connecter à une des machines de TPs de l'enseirb. Pour connaitre les machines disponibles, vous pouvez utiliser la commande `netgroup [numéro_de_salle]` par exemple _netgroup I101_.
