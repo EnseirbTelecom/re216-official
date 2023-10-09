@@ -52,7 +52,8 @@ A la suite de ce tutoriel, vous obtenez un token sous la forme d'une chaine de c
 La soumission des jalons se fait sur GitHub en créant une release de votre code. Une release de code est une capture de l'état de vos fichiers disponibles sur votre dépot github à un instant _t_.
 
 Pour faire correctement une release:
-* **assurez vous d'avoir bien mis le code du jalon courrant dans le repertoire qui convient** (i.e., _./jalon1_ pour le code du jalon 1, etc.).
+* **assurez vous d'avoir bien mis le code du jalon courrant dans le repertoire qui convient** (i.e., _./travail_ pour le code du jalon 1 
+à 4, et _./rendu\_final_ pour le rendu final, etc.).
 * **Ne pas mettre de fichiers attachés à la release**, l'équipe enseignante les ignorera dans l'évaluation.
 * **publiez votre release** et de ne pas la garder en tant que draft uniquement. Elle sera ignorée dans le cas échéant.
 
